@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+            
+            <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Next Steps</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Architecture</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                    <!--strong>NaaS</strong-->
+                    
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled" id="runbookSubmenu">
+                                
+                            <li>
+                                <a href="#stract" class="panel-collapse" data-toggle="collapse">
+                                    &#187 Business & Financial Plans
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#HLNA" data-toggle="panel-collapse" aria-expanded="collapse">
+                                    &#187 Network Architecture
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#network_architecture.html" data-toggle="panel-collapse" aria-expanded="collapse">
+                                    &#187 Network Planning & Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#o_m" data-toggle="panel-collapse" aria-expanded="collapse">
+                                    &#187 RFx & Vendor Assessment
+                                </a>
+                            </li>
+                        </ul> 
+                        <li>
+                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-option-horizontal"></i>
+                                Methods of Engagement
+                            </a>
+                            <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <!--li><a href="MoE_Primers.html">&#187 Primers</a></li-->
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="strategic_use.html">
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                Using the PlayBook 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+            <!-- Page Content Holder -->
+           <section id="hld" hidden>
+                <div id="content"> 
+                    
+                    <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                        <h1><a class="titulo-h1 anchor-bum color-luminati" name="item1">1
+                            Introduction</a></h1>
+                            
+                            <p class="normal-text">This module provides
+                            basic concepts and background related to the fixed wireless access (FWA)
+                            network architecture. It shows the different segments of the network, the
+                            interactions between them and the options to implement each network segment.
+                            All this will serve to understand how to define the network architecture for
+                            your network based on the characteristics of your Tribal Land (such as coverage
+                            target areas, available spectrum, and population).</p>
+                            
+                            <p class="normal-text">Figure 1 displays a summary of the Tribal
+                            Land Journey, highlighting the step where the Network Architecture is
+                            established (step 4). </p>
+                            
+                            <p class="normal-text"><img
+                            width=669 height=242 id="Picture 40"
+                            src="images/network_architecture/image001.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>1 &mdash; Network Architecture module as part of
+                            the Tribal Land Journey.</i></p>
+                            
+                            <p class="normal-text">Once the
+                            spectrum strategy and the coverage targets have been defined which is supported
+                            by module 1 (Business &amp; Financial Plans), the
+                            next step is to define the most suitable network architecture (which will cover
+                            the access, backhaul and core segments of the network) as well as a general
+                            recommendation of the internet protocol (IP) and system architectures.</p>
+                            
+                            <p class="normal-text">This module
+                            provides a guide to generate these outputs for your network. After this is
+                            done, the defined architectural option will serve as the starting point and
+                            main reference to develop the preliminary design of the network (step 5). Alternatively,
+                            you may decide to engage with the vendor community through a request for
+                            information (RFI) or request for proposals (RFP) process (step 6) to assess and
+                            possibly select vendors to design and deploy the network, based on your
+                            architecture.</p>
+                            
+                            <h1><a class="titulo-h1 anchor-bum color-luminati" name="item2">2 Fixed Wireless Architecture Essentials</a></h1>
+                            
+                            <p class="normal-text">Fixed wireless access (FWA) utilizes
+                            wireless communication technologies to provide broadband services to fixed
+                            locations such as homes or business. FWA is a lower cost alternative to
+                            wireline architectures based on fiber or coaxial cable to provide last mile
+                            connectivity (connectivity between the base station and the end user).</p>
+                            
+                            <p class="normal-text">The typical FWA architecture is shown in Figure 2.</p>
+                            
+                            <p class="normal-text"><img width=583 height=359 id="Picture 57"
+                            src="images/network_architecture/image002.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>2 &mdash; Fixed wireless access network principle.</i></p>
+                            
+                            <p class="normal-text">In an FWA network customer premises
+                            equipment (CPE) is installed at each home. Each CPE establishes a wireless
+                            communication a base station (BS) to access the network. Then, the BS communicates,
+                            via a backhaul link in the transport network, to the core site. The core site
+                            is the segment in charge of managing all communications towards the internet.</p>
+                            
+                            <p class="normal-text">The FWA network is composed by three main
+                            segments: the radio access network (RAN) comprised by the CPEs and the BSs, the
+                            transport or backhaul network and the core site. Each of these segments is briefly
+                            described below.</p>
+                            
+                            <p class="normal-text"><b>A. </b><b><u>RAN</u></b></p>
+                            
+                            <p class="normal-text"><a>The RAN refers to the set of radio base stations (BS) deployed at
+                            access sites (RAN sites) over the area to be served to provide wireless access
+                            to the end users. The BS serves as the access point to the network for the CPE
+                            installed at each home. On the home side, the CPE translates the signal from
+                            the BS to create a Wi-Fi network that home's inhabitants can use to access the
+                            network through devices such as smartphones, tablets, computers, or any device
+                            which has Wi-Fi functionality.</a></p>
+                            
+                            <p class="normal-text">Figure 3 displays a high-level view of the
+                            RAN for an FWA network.</p>
+                            
+                            <p class="normal-text"><img width=533 height=378
+                            id="Picture 58"
+                            src="images/network_architecture/image003.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>3 &mdash; High-level view of the RAN.</i></p>
+                            
+                            <p class="normal-text"><b>B. </b><b><u>Transport/Backhaul</u></b></p>
+                            
+                            <p class="normal-text">The transport
+                            network provides a backhaul connection between every BS on the RAN to the core
+                            site (which will be described in point C).</p>
+                            
+                            <p class="normal-text">Transport
+                            network can be implemented with three different technologies:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>Microwave: Wireless link between two points,
+                                which requires an obstacle-free path between the two points.</li>
+                                
+                                <li>Fiber optic: Wired link between two points using
+                                a fiber optic cable. It requires a considerable investment for the deployment
+                                of its infrastructure (e.g., cables ducts and pole).</li>
+                                
+                                <li>Satellite: Wireless link between two points
+                                using a satellite to relay information between the two points.</li>
+                            </ul>
+                            
+                            <p class="normal-text">Figure 4 displays a high-level view of the backhaul
+                            architecture showing the three mentioned technologies.</p>
+                            
+                            <p class="normal-text"><img width=613 height=325
+                            id="Picture 59"
+                            src="images/network_architecture/image004.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>4 &mdash; High-level view of the backhaul
+                            architecture.</i></p>
+                            
+                            <p class="normal-text"><b>C. </b><b><u>Core / Aggregation</u></b></p>
+                            
+                            <p class="normal-text">The core site is
+                            the point of aggregation for the traffic in the network and it is equipped with
+                            a high-speed internet connection provided by a larger internet service provider
+                            (ISP). Equipment at the core site manages subscriber connections toward
+                            internet. It also provides security and integrity to each subscriber data.</p>
+                            
+                            <p class="normal-text">To this end, two
+                            main elements are located at the core site:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>Aggregation router &mdash; It aggregates the overall
+                                traffic generated by every BS on the network and routes it toward the internet.</li>
+                                
+                                <li>Switch &mdash; It allows interconnection between elements inside the network.</li>
+                            </ul>
+                            
+                            <p class="normal-text">Together the
+                            aggregation router and the switch are best known as routing and switching
+                            (R&amp;S) equipment. Additional elements can compose a core site when
+                            considering LTE as the RAN technology. Details about these elements will be
+                            provided in section 2.3.1.</p>
+                            
+                            <p class="normal-text">Figure 5 displays an overview of the core network.</p>
+                            
+                            <p class="normal-text"><img width=567 height=227
+                            id="Picture 60"
+                            src="images/network_architecture/image005.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>5 &mdash; High-level view of the core architecture.</i></p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li><b><u>Systems</u></b></li>
+                            </ul>
+                            
+                            <p class="normal-text">The term of
+                            'systems' refers to specialized software tools that have two main tasks:
+                            Firstly, systems act as an intermediary interface between the users and the
+                            administrators of the network (e.g., problem reporting, billing). Secondly, systems
+                            facilitate the monitoring and operation of the network. For big operators, network
+                            systems are known as operational support system (OSS) and the business support
+                            system (BSS).</p>
+                            
+                            <p class="normal-text">The main
+                            elements of the OSS/BSS in the FWA architecture are:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>Network management system (NMS) &mdash; Monitors and
+                                manages network elements and their configuration.</li>
+                                
+                                <li>Ticketing system &mdash; Keeps track of ongoing
+                                issues, reports, and activities on the network.</li>
+                                
+                                <li>Billing system &mdash; Manages the payment, revenues,
+                                invoicing, and FCC reporting functionalities.</li>
+                            </ul>
+                            
+                            <p class="normal-text">Figure 6 displays an overview of the systems
+                            architecture and its integration into the FWA network.</p>
+                            
+                            <p class="normal-text"><img width=432 height=303
+                            id="Picture 61"
+                            src="images/network_architecture/image006.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>6. &mdash; Systems architecture integration into the
+                            network.</i></p>
+                            
+                            <p class="normal-text">In the following sections, a closer look
+                            into the network segments (e.g., RAN, Core, Backhaul, IP, Systems) and basic
+                            guidance to understand the architectural options and its implications is
+                            provided.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-1">2.1
+                            Radio Access Network Architecture</a></h2>
+                            
+                            <p class="normal-text">The RAN provides radio access to the CPE to
+                            reach the core network and the services offered (such as internet access). The
+                            RAN comprises all the base stations (BS) deployed over the area where network
+                            services will be provided.</p>
+                            
+                            <p class="normal-text">The RAN architecture is defined based on
+                            the following attributes:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>RAN technology</li>
+                                <li>BS architecture</li>
+                                <li>CPE type</li>
+                                <li>Spectrum</li>
+                            </ul>
+                            
+                            <h3><a>2.1.1
+                            RAN technology</a></h3>
+                            
+                            <p class="normal-text">The RAN can be deployed using two different
+                            technologies:</p>
+                            
+                            <p class="normal-text"><b>1.
+                            </b><b>Long term evolution (LTE)</b></p>
+                            
+                            <p class="normal-text">LTE is the
+                            fourth generation of mobile communications. The broadband capabilities of LTE allow
+                            it to provide high-speed and reliable radio access. Moreover, LTE technology
+                            has been standardized by the third-generation partnership project (3GPP), allowing
+                            the RAN to be built using equipment from different suppliers.</p>
+                            
+                            <p class="normal-text">However, the
+                            implementation of an LTE RAN forces the network architecture to consider an
+                            evolved packet core (EPC) as part of the core network. Further details about
+                            the EPC will be addressed in section 2.3.</p>
+                            
+                            <p class="normal-text"><b>2.
+                            </b><b>Time division multiple access (TDMA)</b></p>
+                            
+                            <p class="normal-text">TDMA is a transmission
+                            technique in which each network user is allocated a dedicated time slot by the
+                            BS to send and receive data. In this way, all users can access network services
+                            without interfering with each other.</p>
+                            
+                            <p class="normal-text">However, in the
+                            FWA context, TDMA is used to classify equipment suppliers that implement
+                            proprietary transmission schemes based on the TDMA principle. This means that
+                            both the base stations and CPEs must be sourced from the same equipment
+                            supplier.</p>
+                            
+                            <p class="normal-text">On the other
+                            hand, a TDMA RAN does not require a specific architecture for the core network.
+                            It only requires the R&amp;S equipment to achieve communication toward
+                            internet.</p>
+                            
+                            <h3><a>2.1.2
+                            Base station architecture</a></h3>
+                            
+                            <p class="normal-text">As stated before, one the main element of
+                            the RAN is the BS, which provides wireless access to the end user. Each BS is
+                            composed of three functional blocks: antenna, remote radio unit (RRU) and
+                            baseband unit (BBU). Functionalities of each block are described below:</p>
+                            
+                            <p class="normal-text"><b>A. </b><b>BBU</b></p>
+                            
+                            <p class="normal-text">This element is in charge of the digital
+                            processing of the wireless signal and the connection to the backhaul equipment.
+                            Every BS includes at least one BBU.</p>
+                            
+                            <p class="normal-text"><b>B. </b><b>RRU</b></p>
+                            
+                            <p class="normal-text">It is placed between the BBU and the
+                            antenna and performs a double function:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>From the BBU to the antenna (downlink), the RRU
+                                increases the signal frequency and amplifies its power so it can reach the CPE.</li>
+                                
+                                <li>From the antenna to the BBU (uplink), the RRU
+                                amplifies the received signal and decreases its frequency so it can be
+                                processed by the BBU.</li>
+                            </ul>
+                            
+                            <p class="normal-text">The number of RRUs in one BS determines its
+                            number of sectors. Each sector is meant to cover a determined area of the
+                            Tribal Land and provide service to a certain number of houses.</p>
+                            
+                            <p class="normal-text">The typical LTE RAN architecture allows up
+                            to three sectors per access site. On the other hand, a TDMA RAN is usually
+                            built with four sectors per access site. The final definition of the number of
+                            sectors per BS is made during the design process which is addressed in the <a class="a_link" href="">Network Planning &amp; Design</a> module.</p>
+                            
+                            <p class="normal-text"><b>C. </b><b>Antenna</b></p>
+                            
+                            <p class="normal-text">This element radiates the signal coming
+                            from the RRU. To cover as much area as possible, the antenna must be mounted on
+                            top of a high structure (e.g., tower or rooftop) from which most of the Tribal
+                            Land can be seen. Ideally, it should be possible to see the antenna of the BS
+                            from each rooftop in the area intended to cover.</p>
+                            
+                            <p class="normal-text">There are two architectures for BSs depending
+                            on how the RRUs and BBUs are integrated:</p>
+                            
+                            <p class="normal-text"><b>1. </b><b>Split architecture (RRU+BBU)</b></p>
+                            
+                            <p class="normal-text">In the split architecture the RRU and the
+                            BBU are implemented on separate boxes. The RRU will be located close to the
+                            antennas on top of the structure while the BBU must be located closer to the
+                            ground. In this case a single BBU controls all the RRUs at the site.</p>
+                            
+                            <p class="normal-text"><b>2. </b><b>All-in-one (AiO)</b></p>
+                            
+                            <p class="normal-text">In this configuration, the RRU and the BBU
+                            are integrated into the same box. This allows the equipment (antennas, RRU and
+                            BBU) to be located together at the top of the tower or rooftop. This allows to
+                            save tower space and energy consumption, thereby reducing CAPEX compared to the
+                            traditional BBU+RRU approach. Most TDMA equipment implements this architecture.</p>
+                            
+                            <p class="normal-text">Figure 7 shows the BS
+                            main elements and summarizes the deployment options.</p>
+                            
+                            <p class="normal-text"><img width=477 height=310 id="Picture 5"
+                            src="images/network_architecture/image007.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>7. &mdash; Base station main components and
+                            configurations.</i></p>
+                            
+                            <h3><a>2.1.3
+                            CPE type</a></h3>
+                            
+                            <p class="normal-text">The CPE has direct wireless communication
+                            with the BS, which grants it access to the network. There are two types of CPEs
+                            with slightly different operation and functionalities:</p>
+                            
+                            <p class="normal-text"><b>1. </b><b>Indoor CPE</b></p>
+                            
+                            <p class="normal-text">These CPEs allow an easy and quick
+                            self-installation by the customer inside its own house and into the power
+                            system as any standard electrical equipment (e.g., TV, fridge).</p>
+                            
+                            <p class="normal-text">Indoor CPEs integrate in the same box the
+                            home router functionality which translates the signal sent from the BS into a
+                            Wi-Fi local network that provides internet connectivity to the house's
+                            inhabitants.</p>
+                            
+                            <p class="normal-text">The main limitation of the indoor CPEs is
+                            that they can only be installed in homes that are close to the BS due to the
+                            heavy signal losses caused by the signal traversing walls.</p>
+                            
+                            <p class="normal-text"><b>2. </b><b>Outdoor CPE</b></p>
+                            
+                            <p class="normal-text">These CPEs are meant to be installed on the
+                            rooftop of the customer premises, on a point from which the BS can be seen. In
+                            this case, it is required that a field technician installs the CPE on the
+                            customer home.</p>
+                            
+                            <p class="normal-text">Once the CPE is installed, a wired connection
+                            is required to communicate the outdoor CPE with an indoor home router, which is
+                            the one that creates the Wi-Fi local network to provide internet services to
+                            the house inhabitants.</p>
+                            
+                            <p class="normal-text">Since the signal doesn't need to transverse
+                            any major obstacle (ideally), outdoor CPEs are an ideal option for homes that are
+                            located far from the BS.</p>
+                            
+                            <p class="normal-text">Figure 8 displays
+                            the two types of CPE.</p>
+                            
+                            <p class="normal-text"><img width=376 height=208 id="Picture 31"
+                            src="images/network_architecture/image008.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>8. &mdash; Types of CPE.</i></p>
+                            
+                            <h3><a>2.1.4
+                            Spectrum</a></h3>
+                            
+                            <p class="normal-text">Radio equipment (RRUs and CPEs) operate in a
+                            certain frequency band of the electromagnetic spectrum. The lower the
+                            frequency, the higher the coverage that can be achieved with a certain transmit
+                            power. Figure 9 describes the signal
+                            behavior depending on the spectrum band.</p>
+                            
+                            <p class="normal-text"><img width=418 height=189 id="Picture 62"
+                            src="images/network_architecture/image009.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>9. &mdash; Signal behavior depending on the spectrum
+                            band.</i></p>
+                            
+                            <p class="normal-text">Suitable spectrum bands for Tribal Lands
+                            are the educational broadband service (EBS) spectrum in the 2.5 GHz band, the
+                            citizen broadband radio service (CBRS) spectrum in the 3.5 GHz band, and the
+                            unlicensed spectrum in the 5 GHz band. Details on how to obtain access to the
+                            spectrum and decide which bands to use are provided in the Business &amp; Financial Plans module.</p>
+                            
+                            <p class="normal-text">Once that the spectrum bands have been
+                            defined, it is important to define the strategy to use them. In general, the
+                            EBS spectrum should be used to cover the target areas where this spectrum is
+                            available. Then, in areas where EBS spectrum is not available or where
+                            additional capacity is required, the CBRS spectrum or 5 GHz spectrum should be
+                            used. In addition, notice that if using LTE</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-2">2.2
+                            Backhaul Architecture</a></h2>
+                            
+                            <p class="normal-text">The network requires the implementation of backhaul
+                            links to provide connectivity from the base stations at the access sites to the
+                            core site.</p>
+                            
+                            <p class="normal-text">Backhaul links can be deployed based on three
+                            different technologies and must consider technical and economical constraints
+                            as described in the subsections below.</p>
+                            
+                            <h3><a>2.2.1
+                            Microwave technology</a></h3>
+                            
+                            <p class="normal-text">Microwave technology is based on wireless
+                            transmission at frequencies from 3 GHz to 80 GHz using high-capacity radio
+                            equipment and high-gain directional antennas. The use of these kind of antennas
+                            allows to deploy multiple links in the same frequency without interference.</p>
+                            
+                            <p class="normal-text">A microwave link requires to install a
+                            radio equipment and antenna at each of the sites to be connected &mdash; some
+                            microwave equipment integrate the antenna and the radio in the same unit. In
+                            addition, it must exist line-of-sight (LOS) between the two antennas, this
+                            means that there aren't any obstacles in the direct path between the antennas. This
+                            LOS constraint is the main limitation for a MW link due to steep terrain
+                            conditions.</p>
+                            
+                            <p class="normal-text">Using microwave links each access site is directly
+                            connected to the core site or to another access site creating star and chain
+                            topologies</p>
+                            
+                            <p class="normal-text">MW equipment is impacted by spectrum
+                            regulations too as it requires to operate on certain frequency. For this
+                            reason, MW frequencies are also classified (like RAN bands) into unlicensed and
+                            licensed. Unlicensed bands that can be used in the US and that are suitable for
+                            Tribal networks are 5 GHz, 24 GHz and 60 GHz.</p>
+                            
+                            <p class="normal-text">On the other side, licensed bands commonly
+                            used are 7 GHz, 11 GHz, and 15 GHz. To use a licensed band, you'd need to apply
+                            for a license with the FCC and pay for it ($510 per site, valid for 10 years
+                            plus application fees which is ~$1,000 per link)</p>
+                            
+                            <p class="normal-text">When selecting the frequency for a
+                            microwave link the principle described in Figure 9 applies: the higher the frequency
+                            the lower the maximum distance of the link. In addition, it's worth noting that
+                            higher the frequency, the higher the link capacity. For example, a link in 60
+                            GHz can easily achieve multi gigabit speeds while a link in 5 GHz will be
+                            around 500 Mbps.</p>
+                            
+                            <p class="normal-text">Figure 10 displays the
+                            basic concept of MW backhaul.</p>
+                            
+                            <p class="normal-text"><img width=469 height=321 id="Picture 64"
+                            src="images/network_architecture/image010.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>10. &mdash; High-level view of microwave backhaul
+                            architecture.</i></p>
+                            
+                            <h3><a>2.2.2
+                            Fiber optic technology</a></h3>
+                            
+                            <p class="normal-text">Each BS is connected to an Ethernet switch
+                            (also known as cell site gateway &mdash; CSG). However, for the deployment of a FO
+                            network, the CSG must integrate an optical interface. This will allow the CSG
+                            to be connected (via a fiber link) to the core site (which also needs to
+                            integrate an optical interface on the switch or aggregation router).</p>
+                            
+                            <p class="normal-text">A FO network provides a tremendous
+                            operational capacity to transport vast amounts of traffic data. However, its
+                            main limitation lies in the cost and logistics associated with its deployment
+                            and maintenance. Common costs associated to a FO network are, on average
+                            $10-$20/m for an aerial deployment (FO over posts) and $40-$60/m for a buried
+                            deployment. </p>
+                            
+                            <p class="normal-text">Figure 11 displays the
+                            fiber backhaul architecture.</p>
+                            
+                            <p class="normal-text"><img width=441 height=302 id="Picture 65"
+                            src="images/network_architecture/image011.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>11. &mdash; High-level view of the fiber backhaul
+                            architecture.</i></p>
+                            
+                            <h3><a>2.2.3
+                            Satellite technology</a></h3>
+                            
+                            <p class="normal-text">Satellite links utilize a very-small aperture
+                            terminal (VSAT) to provide connectivity to the access site using a satellite in
+                            the earth's orbit as a relay. The VSAT consists of a modem and an antenna
+                            specially designed for satellite communications. The VSAT is connected through
+                            a satellite link to a satellite hub from which the core network or the internet
+                            can be reached. This hub is a central unit that manages communications between
+                            several satellite links.</p>
+                            
+                            <p class="normal-text">The only requirement to deploy a satellite
+                            link is that the BS is within the satellite's coverage. However, the costs
+                            associated with the satellite service fee are quite high ($300 to $3,000
+                            monthly fee per Mbps). Thus, satellite should be considered as the last resort,
+                            mainly in networks with only one access site in remote areas where any other
+                            connectivity alternative exists.</p>
+                            
+                            <p class="normal-text">Figure 12 displays the
+                            satellite link architecture.</p>
+                            
+                            <p class="normal-text"><img width=554 height=208 id="Picture 9"
+                            src="images/network_architecture/image012.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>12. &mdash; High-level view of a satellite transport
+                            network.</i></p>
+                            
+                            <h3><a>2.2.4
+                            Use of existing backhaul</a></h3>
+                            
+                            <p class="normal-text">To make an efficient use of the budget,
+                            it's important to consider if your Tribal Land already owns an existing
+                            transport network. If that's the case, the existing transport network may be
+                            reused and expanded, provided it has enough capacity to support traffic from
+                            the FWA network.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-3">2.3
+                            Core Architecture</a></h2>
+                            
+                            <p class="normal-text">The core site is the last piece in the FWA,
+                            which serves as a gateway to the internet. Equipment at the core site is in
+                            charge to handle the aggregated traffic generated by the RAN and manage each
+                            user session individually in terms of integrity and security.</p>
+                            
+                            <p class="normal-text">As mentioned in section 2.2, different RAN
+                            technologies force the implementation of different core architectures. An LTE
+                            RAN architecture forces the deployment of an EPC + R&amp;S Equipment (switch
+                            and aggregation router), while a TDMA RAN architecture only considers R&amp;S
+                            Equipment.</p>
+                            
+                            <h3><a>2.3.1
+                            Evolved packet core (EPC)</a></h3>
+                            
+                            <p class="normal-text">The EPC has the main function of providing
+                            the necessary equipment signaling (e.g., access control, service establishment,
+                            user management) and appropriate user data handling. </p>
+                            
+                            <p class="normal-text">The architecture and elements of the EPC
+                            are standardized by the 3GPP, which allows its operation with any RAN equipment
+                            supplier. The main elements of the EPC are described below:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>Mobility management entity (MME) &mdash; It handles
+                            security and session management of very user in the RAN.</li>
+                            
+                            <li>Serving gateway (S-GW) &mdash; It's the main
+                            interconnection point between the RAN and the EPC.</li>
+                            
+                            <li>Packet data network gateway (P-GW) &mdash; It is the
+                            main interconnection point between the EPC and internet.</li>
+                            
+                            <li>Home subscriber server (HSS) &mdash; It concentrates
+                            subscription-related information about every end user equipment in the network.</li>
+                            
+                            <li>Policy and charging enforcement function (PCRF)
+                            &mdash; It's the entity in change of the policy and charging functions in the
+                            network, providing quality of services (QoS) rules to be applied on the P-GW.</li>
+                            </ul>
+                            
+                            <p class="normal-text">In addition to the EPC, R&amp;S equipment
+                            is required at the core site to aggregate traffic coming from every BS of the
+                            RAN and direct it to the EPC. Specifics on R&amp;S equipment are addressed in
+                            section 2.3.2.</p>
+                            
+                            <p class="normal-text">The EPC can be deployed in a distributed or
+                            in a centralized manner.</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li>A distributed EPC requires that MME, S-GW and
+                                P-GW be located on the same location as the BS by installing extra hardware
+                                next to the radio equipment (RRU &amp; BBU). The HSS and the PCRF can be
+                                located at the access sites or at the centralized core site. In this case, the
+                                R&amp;S equipment has a crucial role in the interconnection between the
+                                scattered EPC elements.<br>The distributed core allows to save
+                                investment for the core network when the number of BS in the RAN is low.</li>
+                                
+                                <li>A centralized EPC means that all EPC elements
+                                are located at the core site. This solution is optimal when the RAN comprises a
+                                considerable number of BS, which means that the extra hardware required for the
+                                distributed EPC is unfeasible in terms of capital investment. </li>
+                            </ul>
+                            
+                            <p class="normal-text">Figure 13 displays
+                            a high-level overview of the EPC architecture, considering both distributed and
+                            centralized options.</p>
+                            
+                            <p class="normal-text"><img width=641 height=200 id="Picture 8"
+                            src="images/network_architecture/image013.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>13. &mdash; EPC network architecture options.</i></p>
+                            
+                            <h3><a>2.3.2
+                            TDMA core architecture</a></h3>
+                            
+                            <p class="normal-text">As mentioned before, the TDMA core network
+                            requires only a couple of routing and switching (R&amp;S) elements:</p>
+                            
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li><b>Aggregation router</b>: The main function of this router is to aggregate and manage the
+                                overall traffic generated from the RAN and route it to the internet.</li>
+                                
+                                <li>
+                                <b>Switch: </b>This
+                                switch provides the necessary number of ports to connect and manage all BS of
+                                the RAN and pass it to the aggregation router.</li>
+                            </ul>
+                            
+                            <p class="normal-text">Figure 14 displays
+                            a high-level overview of the TDMA core architecture.</p>
+                            
+                            <p class="normal-text"><img width=534 height=159 id="Picture 68"
+                            src="images/network_architecture/image014.png"></p>
+                            
+                            <p align=center><i><a>Figure </a>14. &mdash; TDMA core network architecture.</i></p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-4">2.4
+                            Internet Protocol (IP) Architecture</a></h2>
+                            
+                            <p class="normal-text">The typical protocols for the network
+                            equipment to intercommunicate between them are Ethernet and the IP. For this
+                            reason, these two protocols are mandatory implemented in the network
+                            architecture.</p>
+                            
+                            <p class="normal-text">Main architecture considerations for
+                            Ethernet and IP protocols are described in the following subsections.</p>
+                            
+                            <h3><a>2.4.1
+                            Virtual Local Area Network (VLAN)</a></h3>
+                            
+                            <p class="normal-text">The traffic isolation is key to achieve a
+                            better performance of the network because it enables the prioritization of
+                            traffic that is crucial to the network. One approach to traffic isolation is by
+                            implementing VLANs. VLANs are tags in user packets that indicates to the
+                            network to handle the data in the packets in an isolated fashion. When a user
+                            is assigned to a VLAN, they only can communicate to other users in the same
+                            VLAN thus reaching traffic separation. Another advantage of using VLANs on the
+                            network is to ease the pain of problem-solving at the network lower layers.</p>
+                            
+                            <p class="normal-text">VLANs are configured in the switch, the
+                            aggregation router and all the equipment that handles an IP address.</p>
+                            
+                            <h3><a>2.4.2
+                            Routing Protocols</a></h3>
+                            
+                            <p class="normal-text">A routing protocol enables the equipment of
+                            the network to know how to reach each other, thus allowing a proper function of
+                            the network. Two types of routing protocols are known: static and dynamic. The
+                            static ones are not recommended to be implemented on the network since they
+                            require a manual configuration and update of the routes to reach each part of
+                            the network. In contrast, the dynamic routing protocols calculate and update
+                            routes in an automated way.</p>
+                            
+                            <p class="normal-text">The dynamic protocols recommended for most
+                            of the scenarios relevant to Tribal Lands are: Open Shortest Path First (OSPF)
+                            for the local network and Border Gateway Protocol (BGP) to interconnect to
+                            outside networks (i.e., internet).</p>
+                            
+                            <h3><a>2.4.3
+                            IP Planning</a></h3>
+                            
+                            <p class="normal-text">For the network equipment to effectively
+                            communicate between them, each network element must be assigned one or more IP
+                            addresses. These IP addresses must be also organized to facilitate the network
+                            troubleshooting.</p>
+                            
+                            <p class="normal-text">IP Planning is required to distribute, in a
+                            simple way, the available IP addresses across the network. The typical case is
+                            to use the version 4 of this protocol, most known as IPv4 as this is used
+                            worldwide.</p>
+                            
+                            <p class="normal-text">There are three IP segments that are available
+                            to be used in any local network, in this case, the fixed wireless access
+                            network. Table 1 contains the
+                            three IP segments available for use:</p>
+                            
+                            <div align=center>
+                            
+                            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=472
+                             style='border-collapse:collapse;border:none'>
+                             <tr>
+                              <td width=141 valign=top style='width:106.1pt;border:solid black 1.0pt;
+                              background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p align=center style="color:#FFF">IP segment</p>
+                              </td>
+                              <td width=331 valign=top style='width:248.05pt;border:solid black 1.0pt;
+                              border-left:none;background:#1F4E79;padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p align=center style="color:#FFF">Recommended use</p>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td width=141 style='width:106.1pt;border:solid black 1.0pt;border-top:none;
+                              padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p class="normal-text">10.0.0.0
+                              /8</p>
+                              </td>
+                              <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+                              border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p class="normal-text">Large sized networks. It considers
+                              hundreds of thousands of users, several services, and hundreds of R&amp;S
+                              equipment.</p>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td width=141 style='width:106.1pt;border:solid black 1.0pt;border-top:none;
+                              padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p class="normal-text">172.16.0.0
+                              /12</p>
+                              </td>
+                              <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+                              border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p class="normal-text">Medium sized networks. It considers
+                              several tens of thousands of users, several services, and tens of R&amp;S
+                              equipment.</p>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td width=141 style='width:106.1pt;border:solid black 1.0pt;border-top:none;
+                              padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p class="normal-text">192.168.0.0
+                              /16</p>
+                              </td>
+                              <td width=331 style='width:248.05pt;border-top:none;border-left:none;
+                              border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                              <p class="normal-text">Small
+                              sized networks or residential use. It considers several thousands of users
+                              and tens of R&amp;S equipment.</p>
+                              </td>
+                             </tr>
+                            </table>
+                            
+                            </div>
+                            
+                            <p align=center><i><a>Table </a>1.
+                            Private IP networks for common use.</i></p>
+                            
+                            <p class="normal-text">The selected segment is further subdivided and
+                            grouped by RAN, Core, Tx, Systems and R&amp;S equipment according to the
+                            defined architecture. This subdivision is handled by the <a class="a_link" href="">Network Architecture Wizard which is analyzed in
+                            section 3.2.</p>
+                            
+                            <p class="normal-text">The final IP plan is defined during the
+                            detailed design phase which is out of the scope of the playbook.</p>
+                            
+                            <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="item2-5">2.5
+                            Systems Architecture</a></h2>
+                            
+                            <p class="normal-text">The network systems architecture covers
+                            three main functional blocks: NMS, Billing System and Ticketing System. These
+                            systems can be implemented on premise (through physical servers in the network)
+                            or in the cloud (through a web server such as Amazon Web Services or Google
+                            Cloud). The decision point for on-premise vs cloud is the cost. While the
+                            on-premise option requires a higher initial inversion (regardless of the number
+                            of users), the cloud will require a monthly fee to operate (directly dependent
+                            of the number of users). Inevitably, this decision is exclusively based on the
+                            number of users and considering the less expensive one. This is handled
+                            automatically by the <a class="a_link" href="">Network Architecture
+                            Wizard</a> which is addressed in section 3.2.</p>
+                            
+                            <h3><a>2.5.1
+                            Network Management System</a></h3>
+                            
+                            <p class="normal-text">The NMS is a tool that enables the network
+                            administrator to manage in a single platform, the equipment that is present in
+                            the network. Typical functionality for the NMS is monitoring of alarms and
+                            performance of the network and configuration management. The NMS, ideally,
+                            handles all the devices of the network independently of the vendor, version, or
+                            model.</p>
+                            
+                            <h3><a>2.5.2
+                            Billing System</a></h3>
+                            
+                            <p class="normal-text">The billing system allows an easy way to
+                            check a status of the billing of the users. It can display the monthly usage
+                            per user, the total amount billed per user, the payment information and it
+                            handles the invoice generation. For tribal lands it must support 477 filing, to
+                            comply with FCC requirements.</p>
+                            
+                            <h3><a>2.5.3
+                            Ticketing System</a></h3>
+                            
+                            <p class="normal-text">The ticketing system is the interface that
+                            allows the end-user to directly provide feedback to the network. This
+                            interaction usually begins when the user has a problem with the service, and it
+                            raises a ticket for the technicians to solve.</p>
+                    </div>
+
+                    <div class="right">
+                        <a class='link-next' href="#" onclick="switchContent('#fm')">Next &#8658;</a>
+                    </div>
+                    <br>
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                    
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
+                    <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. FIXED WIRELESS ARCHITECTURE ESSENTIALS</strong></a>
+                    <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Radio Access Network Architecture</em></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Backhaul Architecture</em></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Core Architecture</em></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-4"><em>2.4 Internet Protocol (IP) Architecture</em></a>
+                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-5"><em>2.5 Systems Architecture</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="fm" hidden>
+            <div id="content"> 
+                
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-2" name="item3">3
+                        Establishing your Network Architecture</a></h1>
+                        
+                        <p class="normal-text">This section will guide you through the
+                        process of defining the architecture of your Network. This process is based on
+                        the use of the <a class="a_link" href="">Network Architecture
+                        wizard</a> which is an easy-to-use tool that will render a view of the
+                        suitable architectures based on your Network characteristics and service
+                        requirements.</p>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-1">3.1
+                        Define coverage targets and export data from the
+                        Tribal Mapping tool.</a></h2>
+                        
+                        <p class="normal-text">The <a class="a_link" href="">Network
+                        Architecture wizard</a> requires as an input the table export from the <a class="a_link" href="">Tribal Mapping tool</a> addressed in the <a class="a_link" href=""></a>Business &amp; Financial Plans module</a>. This table
+                        contains the details of the target areas that the Network is required to cover.
+                        Below an example is presented which will be utilized across this and the
+                        following sections.</p>
+                        
+                        <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+                        background:#EFEFEF'>
+                        
+                        <p class="normal-text"><b><i>Example:</i></b></p>
+                        
+                        <p class="normal-text">The target areas selected in the <a class="a_link" href="">Tribal Mapping tool</a> (each of them identified by its own ID) are shown in Figure <i>15</i>.</p>
+                        
+                        <p class="normal-text"><img width=463
+                        height=193 id="Picture 21"
+                        src="images/network_architecture/image015.png"></p>
+                        
+                        <p align=center><i>Figure 15</i><i>. Example
+                        target polygons.</i></p>
+                        
+                        <p class="normal-text">Table 2
+                        displays the information of each polygon obtained from the tool:</p>
+                        
+                        <p class="normal-text"><img width=605
+                        height=127 id="Picture 37"
+                        src="images/network_architecture/image016.jpg"></p>
+
+                        <p align=center><i>Table 2</i><i>. Input example.</i></p>
+                        
+                        </div>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-2"><a>3.2
+                        Operate the Network Architecture wizard</a></h2>
+                        
+                        <p class="normal-text">Once you have the output from the <a class="a_link" href="">Tribal Mapping tool</a>, perform the following steps to
+                        use the <a class="a_link" href="">Network Architecture wizard</a>:</p>
+                        
+                        <p class="normal-text"><b>Step 1. Download the Wizard tool and the
+                        associated word template.</b></p>
+                        
+                        <p class="normal-text">The template will not be directly used, but
+                        it is necessary for the tool to generate the final report. Figure 16 shows the wizard (.xlsm file) and
+                        the template (.dotx file) documents.</p>
+                        
+                        <p class="normal-text"><img width=605 height=70 id="Picture 49"
+                        src="images/network_architecture/image017.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>16. &mdash; Architecture Wizard Tool and Template
+                        files.</i></p>
+                        
+                        <p class="normal-text"><b>Step 2. Selecting the input file.</b></p>
+                        
+                        <p class="normal-text">Select the output file of the <a class="a_link" href="">Tribal Mapping tool</a> by clicking the 'Browse input
+                        file' as shown in Figure 17.
+                        After clicking the button, a pop-up window will appear, and you can select the
+                        output file of the <a class="a_link" href="">Tribal Mapping tool</a> as
+                        shown in Figure 18.</p>
+                        
+                        <p class="normal-text"><img width=605 height=230 id="Picture 34"
+                        src="images/network_architecture/image019.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>17. &mdash; Input screen of the Architecture Wizard
+                        tool</i></p>
+                        
+                        <p class="normal-text"><img
+                        width=605 height=260 id="Picture 53"
+                        src="images/network_architecture/image020.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>18. &mdash; Selection of the input file.</i></p>
+                        
+                        <p class="normal-text"><b>Step 3. The 3.5 GHz band option</b></p>
+                        
+                        <p class="normal-text">Select the 3.5 GHz band option if the
+                        Tribal Land is willing to use this band (see Figure 19) according to the strategy defined
+                        in the Business &amp; Financial Plans module (module 1).</p>
+                        
+                        <p class="normal-text"><img width=605 height=79 id="Picture 35"
+                        src="images/network_architecture/image022.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>19. &mdash; 3.5 GHz band selection.</i></p>
+                        
+                        <p class="normal-text"><b>Step 4. Select the existing Transport
+                        networks</b></p>
+                        
+                        <p class="normal-text">Select the existing transport networks
+                        present in the Tribal Land target areas. If more than one transport network is
+                        available, you can select both options, as shown in Figure 20. Use the "I don't know" if this
+                        information is not available.</p>
+                        
+                        <p class="normal-text"><img width=589 height=60 id="Picture 15"
+                        src="images/network_architecture/image023.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>20. &mdash; Selection of an existing transport
+                        network.</i></p>
+                        
+                        <p class="normal-text"><b>Step 5. Architecture Definition</b></p>
+                        
+                        <p class="normal-text">(a) Click the "Define" button to show the
+                        suitable architectures as presented in Figure 21.</p>
+                        
+                        <p class="normal-text"><img width=605 height=230 id="Picture 18"
+                        src="images/network_architecture/image019.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>21. &mdash; Input screen of the Architecture Wizard
+                        tool. The Define button is highlighted.</i></p>
+                        
+                        <p class="normal-text">(b) After a short time-lapse, the results
+                        will be shown in the table below the questions' section. An example of the
+                        wizard's result in shown in Figure 22.</p>
+                        
+                        <p class="normal-text"><img width=655 height=352 id="Picture 22"
+                        src="images/network_architecture/image027.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>22. &mdash; Example of wizard's architectures
+                        recommendations.</i></p>
+                        
+                        <p class="normal-text">The table containing the suitable
+                        architectures for the Tribal Land is shown in Figure 22 highlighted by a red square. The
+                        architectural options that don't suit the Tribal Land scenario are not enabled.
+                        A closer look is shown in Figure 23. The results table displays a
+                        rough order of magnitude (RoM) estimation of the number of sites, CAPEX, the
+                        5-year OPEX and the total CAPEX+OPEX for each available option.</p>
+                        
+                        <p class="normal-text">Please note that the RoM contemplates a
+                        variation of 20% between these values and the final design since the values
+                        presented are based on simplifying assumptions and average prices for equipment
+                        and other cost components. Estimates of number of sites, CAPEX and OPEX are
+                        provided as a reference for comparison. For more accurate costs you should
+                        consider performing a preliminary design following the instructions in the <a class="a_link" href="">Network Planning &amp; Design Module</a>.</p>
+                        
+                        <p class="normal-text"><img width=605 height=350 id="Picture 23"
+                        src="images/network_architecture/image029.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>23. &mdash; Example of wizard's architectures
+                        results table.</i></p>
+                        
+                        <p class="normal-text">(c) After the selection of an architectural
+                        option, the preview is shown on the right side of the table, as presented in Figure 22. Figure 24 displays an example of the
+                        high-level architecture of the resultant network.</p>
+                        
+                        <p class="normal-text"></p>
+                        
+                        <p class="normal-text"><img width=589 height=323 id="Picture 17"
+                        src="images/network_architecture/image030.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>24. &mdash; Example of the high-level view of the resultant
+                        architecture.</i></p>
+                        
+                        <p class="normal-text"><b>Step 6. Select your architecture</b></p>
+                        
+                        <p class="normal-text">The selection of the architecture is done
+                        through the results table (see Figure 23). When choosing an architecture,
+                        the directives of the Tribal Land must be applied (e.g., preferred RAN
+                        technology, lowest cost, a smaller number of sites). Subsection 3.3 provides
+                        some directives to define an architecture when two or more architectural
+                        options are suitable.</p>
+                        
+                        <p class="normal-text"><b>Step 7. Export the Reference
+                        Architecture report</b></p>
+                        
+                        <p class="normal-text">Click the 'Export selected report (docx)'
+                        button to generate the report, as shown in Figure 25. The report is generated only for
+                        the selected option and the output file will be placed in the same folder as
+                        the Wizard tool (see Figure 26). The processing of the report can
+                        take several minutes to finish.</p>
+                        
+                        <p class="normal-text"><img width=605 height=350 id="Picture 32"
+                        src="images/network_architecture/image034.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>25. &mdash; Location of the 'Export selected report
+                        (.docx)'' button.</i></p><br>
+                        
+                        <p class="normal-text"><img width=620 height=40 id="Picture 56"
+                        src="images/network_architecture/image032.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>26. &mdash; Report output file</i></p>
+                        
+                        <p class="normal-text">The report will contain the following information
+                        about the selected architecture:</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><b>Executive Summary:</b> A summary of the report. It includes a short explanation of how the
+                            report is structured.</li>
+                            
+                            <li><b>Introduction:</b> A
+                            quick overview of the selected architecture.</li>
+                        
+                            <li><b>RAN Architecture:</b>
+                            RAN technology generalities. It includes considerations and recommendations.</li>
+                            
+                            <li><b>Transport Architecture:</b> Transport technology generalities. It contains the feasible
+                            transport solutions for the architecture and its considerations.</li>
+                            
+                            <li><b>Core Architecture:</b> Associated core technology. It comprises the overview of the
+                            matching core solution for the RAN technology.</li>
+                            
+                            <li><b>Systems Architecture:</b> This section aims to explain the generalities if the OSS/BSS
+                            systems.</li>
+                            
+                            <li><b>IP Architecture:</b>
+                            It covers the main concerns for the IP architecture according to the selected
+                            architectural option.</li>
+                            
+                            <li><b>Engineering Guidelines:</b> This section is a summary of the technical requirements of all the
+                            previous sections.</li>
+                            
+                            <li><b>Acronyms:</b> List of
+                            the most common terminology and its acronyms.</li>
+                        </ul>
+                        
+                        <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-3">3.3
+                        Compare and choose the suitable network
+                        architecture</a></h2>
+                        
+                        <p class="normal-text">From Figure 23, you can notice that more than one
+                        network architecture may suit your Tribal Land scenario. To this end, you can consider
+                        the following recommendations to make a final decision for the best network
+                        architecture option for your tribal land. Please notice that no point is more
+                        important than the others</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Select the option with the smaller CAPEX + OPEX.</li>
+                        </ul>
+                        
+                        <p class="normal-text">In scenarios
+                        where two or more architecture are feasible, it is recommended to select the
+                        option which CAPEX + OPEX is the lowest of all. This option is recommended in
+                        cases where your financial constraints are tight. However, the CAPEX+OPEX
+                        should be informed by interaction with the vendor community and a preliminary
+                        network design.</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Select the option with the least number of
+                        estimated sites.</li>
+                        </ul>
+                        
+                        <p class="normal-text">Select this
+                        option when you want to minimize the efforts during network deployment. This
+                        option is recommended when your working force is composed by a small number of
+                        persons and/or timelines are tight.</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Preferred technology.</li>
+                        </ul>
+                        
+                        <p class="normal-text">In some cases,
+                        you may prefer a technology (LTE or TDMA) over the other. For instance,
+                        choosing LTE over TDMA may allow your network to have a smooth evolution
+                        towards future standardized technologies (like 5G).</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Vendor interoperability.</li>
+                        </ul>
+                        
+                        <p class="normal-text">You must verify
+                        that vendors willing to take place in the construction of the network can
+                        interoperate between them to comply with the defined architecture. For
+                        instance, in an LTE network, vendor must ensure interoperability for their BS
+                        equipment if a traditional BBU+RRU deployment is selected.</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Operational implications.</li>
+                        </ul>
+                        
+                        <p class="normal-text">In some cases,
+                        you me want to reduce efforts during the deployment of the network due to
+                        several reasons: lack of skill of the network staff or low budget for that
+                        regard. For instance, if a network architecture contemplates outdoor CPEs but
+                        your staff skills don't cover that, it will be recommended to select an indoor
+                        CPE case.</p>
+                        
+                        <p class="normal-text">In addition, you must be aware that the
+                        number of sites and CAPEX+OPEX computed by the wizard are an estimation from a coverage
+                        analysis. The final number of sites will be defined as a result of the <a class="a_link" href="">Network Planning &amp; Design module</a>.</p>                   
+                </div>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. ESTABLISHING YOUR NETWORK ARCHITECTURE</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Define coverage targets and export data from the Tribal Mapping tool</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Operate the Network Architecture wizard</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 Compare and choose the suitable network architecture</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4
+                        Next steps in the journey</a></h1>
+                        
+                        <p class="normal-text">The network architecture module is linked
+                        with the following modules in the Tribal Land journey: <a class="a_link" href="">Network
+                        Planning &amp; Design</a> and <a class="a_link" href="">RFx &amp; Vendor Assessment</a>.
+                        These steps are shown in Figure 27 as steps 5 and 6 respectively of
+                        the Tribal Land Journey.</p>
+                        
+                        <p class="normal-text"><img width=669 height=242 id="Picture 44"
+                        src="images/network_architecture/image033.png"></p>
+                        
+                        <p align=center><i><a>Figure </a>27. &mdash; Next steps in the Tribal Land Journey</i></p>
+                        
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                                <li><a class="a_link" href="">Network Planning &amp; Design module</a></li>
+                            </ul>
+                        
+                        <p class="normal-text">The defined
+                        network architecture will serve as a guideline during the design process.
+                        Network designer must consider the resultant architecture as a starting point
+                        of its design. Main points to be considered are:</p>
+                        
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">RAN technology</li>
+                            <li class="normal-text">CPE option</li>
+                            <li class="normal-text">Spectrum band</li>
+                            <li class="normal-text">Transport technology</li>
+                            <li class="normal-text">Core architecture</li>
+                            <li class="normal-text">VLANs and IP addressing</li>
+                        </ol>
+                        
+                        <p class="normal-text">Keep in mind
+                        that the defined network architecture can be modified after the network
+                        planning &amp; design process has been made. Network designer may conclude that
+                        modifications to certain network segment(s) could mean an improvement in terms
+                        of performance or improve the performance of the of the overall network or a
+                        better adaption to the Tribal Land scenario.</p>
+                        
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li><a class="a_link" href="">RFx &amp; Vendor Assessment module</a></li>
+                        </ul>
+                        
+                        <p class="normal-text">An important
+                        part of the architecture wizard report is the section containing the
+                        Engineering Guidelines. These guidelines summarize required equipment
+                        specifications to support the recommended network architecture.</p>
+                        
+                        <p class="normal-text">These equipment
+                        requirements must be considered during the RFx process for the creation of the
+                        RFP and for vendor evaluation. Equipment requirements cover all segments of the
+                        FWA network: RAN, transport, core, IP, and systems.</p>
+
+                </div>
+
+                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                <br>
+                <a href="url" align="center"></a>
+                <div class="right">
+                    <a ></a>
+                    <a href="#">.</a>
+                </div>
+
+            </div>
+              
+            <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+             <nav class="nav nav-pills flex-column">
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. NEXT STEPS IN THE JOURNEY</strong></a>
+             </nav>
+         </nav>
+        </section>  
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+ 
+            let tab;
+            var setPin = true;
+            switchContent('#hld');
+            window.scrollTo(0, 0);
+           
+            function switchContent(selector){
+            $("#hld").hide();
+            $("#fm").hide();
+            $("#e2e").hide();
+            $(selector).show();
+            tab = selector;
+            }
+           
+            window.addEventListener('scroll', function(e) {
+            let reachActive = false;
+            if(tab=="#hld"){
+            $('.color-luminati').each(function(index, element) {
+            const elem = element.getBoundingClientRect();
+            if (elem.top < 30) {
+            $('nav.nav.nav-pills a').removeClass('link-active');
+            $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+            }
+            });
+            }
+            if(tab=="#fm"){
+            $('.color-luminati-2').each(function(index, element) {
+            const elem = element.getBoundingClientRect();
+            if (elem.top < 30) {
+            $('nav.nav.nav-pills a').removeClass('link-active');
+            $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+            }
+            });
+            }
+            if(tab=="#e2e"){
+            $('.color-luminati-3').each(function(index, element) {
+            const elem = element.getBoundingClientRect();
+            if (elem.top < 30) {
+            $('nav.nav.nav-pills a').removeClass('link-active');
+            $('nav.nav.nav-pills a:nth-child('+(index+1)+')').addClass('link-active');
+            }
+            });
+            }
+            });
+            </script>
+    </body>
+</html>

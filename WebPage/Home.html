@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--sd-->
+        <title>PlayBook- Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+		
+    <body onscroll="updateSection()">
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>NaaS PlayBook</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled collapse" id="runbookSubmenu">
+                        <li  class="active">
+                                    <a href="#stract" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Strategic Plan & Scope
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="stract">
+                                        <li><a href="strategy_scope.html"style="margin-left:2em;">&bull; Strategy & Scope</a></li>
+                                        <li><a href="high_level_proyect_plan.html" style="margin-left:2em">&bull; HL Project Plan</a></li>
+                                    </ul>
+                                </li>
+                                <li  class="active">
+                                    <a href="#HLNA" data-toggle="collapse" aria-expanded="false">
+                                        &#187 High Level Network Architecture
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="HLNA">
+                                        <li><a href="ran_hld_architecture.html"style="margin-left:2em">&bull; RAN Architecture</a></li>
+                                        <li><a href="tx_ip_architecture.html" style="margin-left:2em">&bull; TX & IP Architecture</a></li>
+                                        <li><a href="mobile_core_archi.html" style="margin-left:2em"> &bull; Core Architecture</a></li>
+                                        <li><a href="network_monitoring_architecture.html" style="margin-left:2em"> &bull; Network Monitoring</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Network Design
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="homeSubmenu">
+                                        <li><a href="#transportMenu" data-toggle="collapse" style="margin-left:2em">&bull; Transport</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu">
+                                                <li><a href="tx_hld_module.html" style="margin-left:4em;">&#9657; Tx Network HLD</a></li>
+                                                <li><a href="tx_lld_module.html" style="margin-left:4em;">&#9657; Tx Network LLD</a></li>
+                                            </ul>
+                
+                                        <li><a href="#transportMenu2" data-toggle="collapse" style="margin-left:2em">&bull; RAN</a></li>
+                                            <ul class="list-unstyled collapse" id="transportMenu2">
+                                                <li><a href="ran_hld_module.html" style="margin-left:4em;">&#9657; RAN Network HLD</a></li>
+                                                <li><a href="ran_lld_module.html" style="margin-left:4em;">&#9657; RAN Network LLD</a></li>
+                                            </ul>
+                                        <li><a href="#transportMenu3" data-toggle="collapse" style="margin-left:2em">&bull; Core</a></li>
+                                        <ul class="list-unstyled collapse" id="transportMenu3">
+                                            <li><a href="mobile_core_hld.html" style="margin-left:4em;">&#9657; Mobile Core HLD</a></li>
+											<li><a href="mobile_core_lld.html" style="margin-left:4em;">&#9657; Mobile Core LLD</a></li>
+                                            <li><a href="civil_power_design_core.html" style="margin-left:4em;">&#9657; Civil & Power Design</a></li>
+                                        </ul>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#deployment_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 Deployment
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="deployment_m">
+                                        <li><a href="deployment_mgmt.html"style="margin-left:2em">&bull; Deployment Mgmt</a></li>
+                                        <li><a href="site_survey.html"style="margin-left:2em">&bull; Site Survey</a></li>
+                                        <li><a href="i&c_module.html"style="margin-left:2em">&bull; I & C</a></li>
+                                        <li><a href="fiber_const_mgmt.html"style="margin-left:2em">&bull; Fiber Construction Mgmt</a></li>
+                                        <li><a href="site_construction_mgmt.html"style="margin-left:2em">&bull; Site Construction Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#o_m" data-toggle="collapse" aria-expanded="false">
+                                        &#187 O & M
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="o_m">
+                                        <li><a href="noc.html" style="margin-left:2em;">&bull; NOC</a></li>
+                                        <li><a href="soc.html" style="margin-left:2em">&bull; SOC</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#maintenance" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Field Maintenance
+                                    </a>
+                                    <ul class="list-unstyled collapse" id="maintenance">
+                                        <li><a href="cell_site_maintenance.html" style="margin-left:2em">&bull; Cell Site Maintenance</a></li>
+                                        <li><a href="core_site_maintenance.html" style="margin-left:2em">&bull; Core Site Maintenance</a></li>
+<li><a href="field_force_management.html" style="margin-left:2em">&bull; Field Force Mgmt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        &#187 Post-Launch Engineering
+                                    </a>
+                                </li>
+                                <li  class="active">
+                                <a href="#supply" data-toggle="collapse" aria-expanded="false">
+                                    &#187 Supply Chain Management
+                                </a>
+                                <ul class="list-unstyled collapse" id="supply">
+                                    <li><a href="rfx_process.html" style="margin-left:2em">&bull; RFx Process</a></li>
+                                    <li><a href="logistics_warehousing.html" style="margin-left:2em">&bull; Logistics & Warehousing</a></li>
+                                    <li><a href="proc_pro_vendor_mgmt.html" style="margin-left:2em">&bull; Procurement Proc. & Vendor Mgmt.</a></li>
+                                    
+                                </ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-option-horizontal"></i>
+                                Methods of Engagement
+                            </a>
+                            <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <!--li><a href="MoE_Primers.html">&#187 Primers</a></li-->
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                <li><a href="MoE_Tool_Catalogue.html">&#187 Tool Catalogue</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="strategic_use.html">
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                Using the PlayBook 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="comming_soon/comming-soon.html">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+             <h1 align=center>NaaS PlayBook </h1>
+             <p align=center style="font-size: large;">The NaaS PlayBook is the vehicle to serve as the planning and implementation guide for RST NaaS initiatives.</p>
+             <h3>The PlayBook aspires to…</h3>
+
+             <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                <li>Aid NaaS operators in the planning, deployment and operation in the rural environment.</li>
+                <li>Provide a vehicle to serve as the planning and implementation guide for NaaS initiatives. </li>
+                <li>Create a multi-user engagement “product” where NaaS operators seek guidance, instruction and decision support.</li>
+            </ul>
+               <br><hr>
+               <p align=center style="font-size: large;">The NaaS PlayBook is the vehicle to serve as the planning and implementation guide for RST NaaS initiatives. It consists of Frontend and Backend streams comprised of modules, atomic units built around specific objectives and select content and complemented by methods to encourage engagement relevancy.</p>
+               <!--br><img border=1 width=770 height=770 src="images/widgets/Icon1.png"-->
+               <br>
+
+                
+
+               
+                <br><br>
+
+                <div id="container">
+                    <div>
+                        <button class="btn main-button" style="height: 50px;"> <span><strong>Business & Financial Plans</strong></span> </button>
+                    </div>
+                </div>
+                <br>
+                <div id="container">
+                    <div>
+                        <button class="btn gray-button" style="height: 50px;"> <span><strong>Network Architecture</strong></span> </button>
+                    </div>
+                    <div>
+                        <button class="btn gray-button" style="height: 50px;"> <span><strong>Network Plann</strong></span> </button>
+                    </div>
+                </div>
+                <br>
+                <div id="container">
+                    <div>
+                        <button class="btn main-button" style="height: 50px;"> <span><strong>RFx & Vendor<br>Assessment</strong></span> </button>
+                    </div>
+                </div>
+                
+                <br><br>
+                
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             /*$(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });*/
+          
+
+             
+         </script>
+    </body>
+</html>
