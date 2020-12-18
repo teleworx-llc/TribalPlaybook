@@ -566,6 +566,10 @@ AGREGADO
     width: 100%;
 }
 
+.modal-dialog {
+    width: 90%; /* New width for default modal */
+  }
+
 .form-horizontal{
     float: left;
     width:50%;
