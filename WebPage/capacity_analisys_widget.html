@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>PlayBook- Widget</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style2.css">
+        
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    </head>
+		
+    <body>
+
+    <div class >
+        <ul class="barra_superior">
+            <li class="li_superior"><a class="active" href="Home.html">Home</a></li>
+            <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
+        </ul>
+    </div>
+
+        <div class="wrapper-2">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Tribal Connectivity Playbook</h3>
+                    <!--strong>NaaS</strong-->
+                    
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#runbookSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-option-horizontal"></i>
+                            PlayBook Modules
+                        </a>
+                        <ul class="list-unstyled" id="runbookSubmenu">
+                                
+                            <li>
+                                <a href="business_plan.html" class="panel-collapse" data-toggle="collapse">
+                                    &#187 Business & Financial Plans
+                                </a>
+                            </li>
+                            <li>
+                                <a href="network_architecture.html" data-toggle="panel-collapse" aria-expanded="collapse">
+                                    &#187 Network Architecture
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#network_planning.html" data-toggle="panel-collapse" aria-expanded="collapse">
+                                    &#187 Network Planning & Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="rfx_assesment.html" data-toggle="panel-collapse" aria-expanded="collapse">
+                                    &#187 RFx & Vendor Assessment
+                                </a>
+                            </li>
+                        </ul> 
+                        <li>
+                            <a href="#engagementSubmenu" data-toggle="collapse" aria-expanded="false">
+                                <i class="glyphicon glyphicon-option-horizontal"></i>
+                                Methods of Engagement
+                            </a>
+                            <ul class="collapse list-unstyled" id="engagementSubmenu">
+                                
+                                <li><a href="">&#187 Wizards</a></li>
+                                <li><a href="">&#187 Widgets</a></li>
+                                <!--li><a href="MoE_Primers.html">&#187 Primers</a></li-->
+                                <li><a href="">&#187 Templates</a></li>
+                                <li><a href="">&#187 Tool Catalogue</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-question-sign"></i>
+                                Using the PlayBook 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="glyphicon glyphicon-send"></i>
+                                Contact
+                            </a>
+                        </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+                <h2>Capacity Analysis</h2>
+                <p class="normal-text">This widget estimates the total traffic that need to be supported by the TL network. It provides the details at three diferent levels: access, transport and core levels.</p>
+                <p class="normal-text">In order to use this widget, perform the following steps:</p>
+                <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                    <li>Introduce the network design characteristics in the "General Inputs" section. Use the defined values from the network architecture.</li>
+                    <li>Introduce the coverage target polygons' characteristics in the "Polygon Inputs" section. Use the output values from Tribal Mapping Tool.</li>
+                    <li>(Optional for Advaced Users Only) Modify the "Advance Inputs" sections to further customize the calculations.</li>
+                    <li>Click on the "Calculate" button to perform the calculations.</li>
+                    <li>The calculation's result can be found in the "Results" section.</li>
+                </ul>
+                <p class="normal-text">Basics for this widget are addressed on the <a class="a_link" href="network_planning.html">Network Planning & Design Module</a>.</p><br>
+                <h4 class="title-results" style="border-style: solid;background-color:#5f476e;color:#fff"><center>Inputs</center></h4>  
+                
+                <div class="caja_box">
+                    <div align=right>
+                    <button onclick="modifyTable()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalQuickView">Ref Data</button></div>
+                    
+
+                          <!-- Modal: modalQuickView -->
+                          <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+
+                                    <h4 class="title-results" style="border-style: solid;background-color:#5f476e;color:#fff"><center>RAN - Tech Specs</center></h4> 
+                                    <div class="row">
+                                        <label  class="col-sm-2" ><b><center>Description</center></b></label >
+                                        <label  class="col-sm-1"><b><center>DL Max Throughput (Mbps)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>UL Max Throughput (Mbps)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>Max Subscribers</center></b></label >
+                                        <label  class="col-sm-1"><b><center>Tx Sensitivity (dBm)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>Tx Power (dBm)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>Tx Gain Omni (dBi)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>Tx Gain Sector (dBi)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>CPE Sensitivity (dBm)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>CPE Tx Power (dBm)</center></b></label >
+                                        <label  class="col-sm-1"><b><center>CPE Gain (dBi)</center></b></label >
+                                    </div>          
+                                    <div class="row">
+                                        <input id='tabla1_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla1_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla1_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>     
+                                    <div class="row">
+                                        <input id='tabla2_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla2_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla2_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>   
+                                    <div class="row">
+                                        <input id='tabla3_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla3_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla3_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>  
+                                    <div class="row">
+                                        <input id='tabla4_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla4_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla4_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>
+                                    <div class="row">
+                                        <input id='tabla5_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla5_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla5_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>
+                                    <div class="row">
+                                        <input id='tabla6_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla6_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla6_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>
+                                    <div class="row">
+                                        <input id='tabla7_1' name="tx_lat" type = "text" class="col-sm-2">
+                                        <input id='tabla7_2' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_3' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_4' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_5' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_6' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_7' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_8' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_9' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_10' name="tx_lat" type = "text" class="col-sm-1">
+                                        <input id='tabla7_11' name="tx_lat" type = "text" class="col-sm-1">
+                                    </div>                        
+
+                                    <br>
+                                    <div class="form-group">
+                                        <center>
+                                            <button class="btn btn-default" onclick="updateTable()">Update</button>
+                                        </center>
+                                    </div>  
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                   
+                </div>             
+                <br>
+                <form class="form-horizontal-no-img" action="" name="forchi" id="formulario2">
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1"><b><u>Input</u></b></label >
+                    </div>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1">Service Penetration (%)</label >
+                        <input id='form1' name="tx_lat" type = "text" class="col-sm-2" >
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1">Number of sectors per site</label >
+                            <select id="form2" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="LTE_1">LTE 1 sector</option>
+                                <option value="LTE_2">LTE 3 sector</option>
+                                <option value="TDMA">TDMA 4 sectors</option>
+                            </select>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1">Downlink Rate (Mbps)</label >
+                        <input id='form3' name="tx_lat" type = "text" class="col-sm-2" >
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1">Uplink Rate (Mbps)</label >
+                        <input id='form4' name="tx_lat" type = "text" class="col-sm-2" >
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1"><b><u>Polygon Input</u></b></label >
+                    </div>
+            
+                    <br>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label  class="col-sm-3 parag-1">Number of Polygons (Max. 15)</label >
+                        <input id='member' name="tx_lat" type = "text" class="col-sm-2" name="member" >
+                        <label  class="col-sm-1 parag-1"></label>
+                        <button type="submit" class="btn btn-default"><a href="#" id="filldetails" onclick="addFields()">Insert</a></button>
+                    </div>
+                    <br>
+                    <div id="container"></div>
+
+
+                    <br>
+                    <div class="row">
+                        <label  class="col-sm-3 parag-1"></label>
+                        <label><b><u><a class="a_link" onclick='myFunction_1()'><strong><i>&#x2b; Advance Capacity Inputs</i></strong></a></u></b></label >
+                    </div>
+                    <div id="myDIV_1">
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Overbooking Factor</label >
+                            <select id="form5" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Overprovisioning Factor</label >
+                            <input id='form6' name="tx_lat" type = "text" class="col-sm-2" >
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">IP Sec Required</label >
+                            <select id="form7" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Type of Mobile Core</label >
+                            <select id="form8" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="distributed">Distributed</option>
+                                <option value="centralized_small">Centralized Small</option>
+                                <option value="centralized_large">Centralized Large</option>
+                                <option value="na">NA</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Type of Core Router</label >
+                            <select id="form9" name="tx_lon" class="col-sm-2 text-box"> 
+                                <option value="small_router">Small Router</option>
+                                <option value="large_router">Large Router</option>
+                                <option value="na">NA</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label  class="col-sm-3 parag-1"></label>
+                            <label  class="col-sm-3 parag-1">Number of RRUs per site</label >
+                            <input id='value1' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                        </div>
+                       
+                    </div>
+
+                    <br><br>
+
+                    <div class="row">
+                        <center><button id="seg_button" type="submit" class="btn btn-default" disabled>Calculate</button></center>
+                    </div><br>
+
+                <h4 class="title-results" style="border-style: solid;background-color:#5f476e;color:#fff"><center>RAN Analysis</center></h4>
+                <div id="ran_analisys"></div>
+
+                <h4 class="title-results" style="border-style: solid;background-color:#5f476e;color:#fff"><center>Transport Analysis</center></h4>
+                <div id="tx_analysis"></div>
+
+                <h4 class="title-results" style="border-style: solid;background-color:#5f476e;color:#fff"><center>Core Analysis</center></h4>               
+                <br>
+                <div class="row">
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-2 parag-1"><b><u>Subs-based</u></b></label >
+                    <label  class="col-sm-1 parag-1"></label>
+                    <label  class="col-sm-2 parag-1"><b><u>Site-based</u></b></label >
+                    <label  class="col-sm-1 parag-1"></label>
+                    <label  class="col-sm-2 parag-1"><b><u>Total Core Instances</u></b></label >
+                </div>
+                <div class="row">
+                    <label  class="col-sm-1 parag-1"></label>
+                    <label  class="col-sm-2 parag-1">Mobile Core</label >
+                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                    <label  class="col-sm-1 parag-1"></label>
+                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                    <label  class="col-sm-1 parag-1"></label>
+                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                </div>
+                <br>
+                <div class="row">
+                    <label  class="col-sm-3 parag-1"></label>
+                    <label  class="col-sm-2 parag-1"><b><u>N_instances_Throughput</u></b></label >
+                    <label  class="col-sm-1 parag-1"></label>
+                </div>
+                <div class="row">
+                    <label  class="col-sm-1 parag-1"></label>
+                    <label  class="col-sm-2 parag-1">Core Router</label >
+                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                </div>
+                <br><br>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- jQuery CDN border-left: 2px solid gray;-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+
+            var formulario2 = document.getElementsByName('forchi')[0],
+            elementos = formulario2.elements,
+            boton = document.getElementById('btn');
+            
+            var sites = 0;
+            var value16_int;
+            var value17_int;
+            var ran_techs = ['2500 LTE Outdoor', '2500 LTE Indoor',	'3650 LTE Outdoor',	'3650 LTE Indoor',	'2500 TDMA Outdoor', '3650 TDMA Outdoor', '5800 TDMA Outdoor'];
+            var dl_max_th = [140,140,160,160,115,130,155];
+            var ul_max_th = [35,35,45,45,11,13,15];
+            var max_suscriber = [180,180,200,200,16,48,32];
+            var tx_sens = [-104,-104,-103,-103,-96,-95,-95];
+            var tx_power = [40,40,40,40,26,23,28];
+            var tx_gain_omni = [15,15,17,17,10,12,14];
+            var tx_gain_sector = [20,20,22.3,22.3,15,17,19];
+            var cpe_sensitivity = [-94,-94,-94,-94,-90,-88,-86];
+            var cpe_power = [23,23,23,23,25,24,25];
+            var cpe_gain = [14,5,19.5,6.5,19,19,23];
+
+            var form1_var;
+            var form2_var;
+            var form3_var;
+            var form4_var;
+            var form5_var;
+            var form6_var;
+            var form7_var;
+            var form8_var;
+            var form9_var;
+            var value1_int = 3;
+
+            formulario2.addEventListener('submit',function(evt){
+                evt.preventDefault();  
+                form1_var = Number(document.getElementById('form1').value);   
+                form1_var = form1_var/100; 
+                form2_var = formulario2.form2.value;
+                form3_var = Number(formulario2.form3.value);
+                form4_var = Number(formulario2.form4.value);
+                form5_var = Number(formulario2.form5.value);
+                form6_var = Number(formulario2.form6.value);
+                form6_var = form6_var/100; 
+                form7_var = formulario2.form7.value;
+                form8_var = formulario2.form8.value;
+                form9_var = formulario2.form9.value;
+                
+
+                fillFields();
+                document.getElementById("value1").value = value1_int;  
+            });
+
+            var x = document.getElementById("myDIV_1");            
+            x.style.display = "none";
+            /*var x = document.getElementById("myDIV_2");            
+            x.style.display = "none";*/
+
+
+            function modifyTable(){
+                for(var i = 0 ; i < 7; i++){
+                    for(var j = 0 ; j <11 ; j++){
+                        document.getElementById("tabla" + (i+1) + "_1").value = ran_techs[i];  
+                        document.getElementById("tabla" + (i+1) + "_2").value = dl_max_th[i];
+                        document.getElementById("tabla" + (i+1) + "_3").value = ul_max_th[i];
+                        document.getElementById("tabla" + (i+1) + "_4").value = max_suscriber[i];
+                        document.getElementById("tabla" + (i+1) + "_5").value = tx_sens[i];
+                        document.getElementById("tabla" + (i+1) + "_6").value = tx_power[i];
+                        document.getElementById("tabla" + (i+1) + "_7").value = tx_gain_omni[i];
+                        document.getElementById("tabla" + (i+1) + "_8").value = tx_gain_sector[i];
+                        document.getElementById("tabla" + (i+1) + "_9").value = cpe_sensitivity[i];
+                        document.getElementById("tabla" + (i+1) + "_10").value = cpe_power[i];
+                        document.getElementById("tabla" + (i+1) + "_11").value = cpe_gain[i];
+                    }
+                }
+            }
+
+            function updateTable(){
+                console.log('kol')
+                //ran_techs[0] = document.getElementById("tabla1_1").value;  
+                for(var i = 0 ; i < 7; i++){
+                    for(var j = 0 ; j <11 ; j++){
+                        //console.log("tabla" + (i+1) + "_" + (j+1));
+                        ran_techs[i] = document.getElementById("tabla" + (i+1) + "_1").value;  
+                        dl_max_th[i] = document.getElementById("tabla" + (i+1) + "_2").value;
+                        ul_max_th[i] = document.getElementById("tabla" + (i+1) + "_3").value;
+                        max_suscriber[i] = document.getElementById("tabla" + (i+1) + "_4").value;
+                        tx_sens[i] = document.getElementById("tabla" + (i+1) + "_5").value;
+                        tx_power[i] = document.getElementById("tabla" + (i+1) + "_6").value;
+                        tx_gain_omni[i] = document.getElementById("tabla" + (i+1) + "_7").value;
+                        tx_gain_sector[i] = document.getElementById("tabla" + (i+1) + "_8").value;
+                        cpe_sensitivity[i] = document.getElementById("tabla" + (i+1) + "_9").value;
+                        cpe_power[i] = document.getElementById("tabla" + (i+1) + "_10").value;
+                        cpe_gain[i] = document.getElementById("tabla" + (i+1) + "_11").value;
+                    }
+                }
+            }
+
+            function fillFields(){
+                var names = [];
+                var sites_arr = [];
+                var houses = [];
+
+                for(var i=1; i<=sites; i++){
+                    var name_1 = 'name_pol_' + i;
+                    var hous_1 = 'hou_uni_' + i;
+                    var site_1 = 'site_' + i;
+
+                    names[name_1 + '_var'] = document.getElementById('name_pol_' + i).value;
+                    houses[hous_1 + '_var'] = document.getElementById('hou_uni_' + i).value;
+                    sites_arr[site_1 + '_var'] = document.getElementById('site_' + i).value;
+                }
+
+                for(var i=1; i<=sites; i++){
+
+                    var secavg_dl = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form3_var / (form5_var*form6_var*value1_int));
+                    var secavg_ul = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form4_var / (form5_var*form6_var*value1_int));
+                    console.log(names['name_pol_'+i+'_var']);
+                    document.getElementById("names_ori_"+i).value = names['name_pol_'+i+'_var'];
+                    document.getElementById("sec_avg_dl_"+i).value =  secavg_dl.toFixed(2);
+                    document.getElementById("sec_avg_ul_"+i).value =  secavg_ul.toFixed(2);
+                    document.getElementById("site_th_dl_"+i).value = (secavg_dl*value1_int).toFixed(2);
+                    document.getElementById("site_th_ul_"+i).value = (secavg_ul*value1_int).toFixed(2);
+                    document.getElementById("area_th_dl_"+i).value = ((secavg_dl*value1_int) * sites_arr[('site_'+i+'_var')]).toFixed(2);
+                    document.getElementById("area_th_ul_"+i).value = ((secavg_ul*value1_int) * sites_arr[('site_'+i+'_var')]).toFixed(2);
+                }
+            }
+
+            function myFunction_1() {
+                var x = document.getElementById("myDIV_1");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+            function myFunction_2() {
+                var x = document.getElementById("myDIV_2");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+            function addFields(){
+                // Number of inputs to create
+                var number = document.getElementById("member").value;
+                var container = document.getElementById("container");
+                // Clear previous contents of the container
+                while (container.hasChildNodes()) {
+                    container.removeChild(container.lastChild);
+                }
+                var label_t1 = document.createElement("label"); 
+                label_t1.className = "col-sm-3 parag-1";
+
+                var title_1 = document.createElement("label"); 
+                title_1.innerHTML = ("Name");
+                title_1.className = "col-sm-1";
+
+                var label_t2 = document.createElement("label"); 
+                label_t2.className = "col-sm-1 parag-1";
+
+                var title_2 = document.createElement("label"); 
+                title_2.innerHTML = ("Housing Units (#)");
+                title_2.className = "col-sm-2";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+
+                var title_3 = document.createElement("label"); 
+                title_3.innerHTML = ("Number of Sites (#)");
+                title_3.className = "col-sm-2";
+
+                container.appendChild(label_t1);
+                container.appendChild(title_1);
+                container.appendChild(label_t2);
+                container.appendChild(title_2);
+                //container.appendChild(label_t3);
+                container.appendChild(title_3);
+
+                for (i=0;i<number;i++){
+                    var newDiv = document.createElement("div");
+                    newDiv.className = "row";
+                    container.appendChild(newDiv);
+
+                    var label_1 = document.createElement("label"); 
+                    label_1.className = "col-sm-2 parag-1";
+
+                    var newlabel = document.createElement("label"); 
+                    newlabel.innerHTML = ("Polygon " + (i+1));
+                    newlabel.className = "col-sm-2";
+                    ///newlabel.setAttribute('class','col-sm-5');
+
+                    var input_1 = document.createElement("input"); 
+                    input_1.setAttribute('id','name_pol_' + (i+1));
+                    input_1.setAttribute('type','text');
+                    input_1.setAttribute('class','col-sm-2');
+
+                    var label_2 = document.createElement("label"); 
+                    label_2.className = "col-sm-1 parag-1";
+
+                    var label_3 = document.createElement("label"); 
+                    label_3.className = "col-sm-1 parag-1";
+
+                    var input_2 = document.createElement("input"); 
+                    input_2.setAttribute('id','hou_uni_' + (i+1));
+                    input_2.setAttribute('type','text');
+                    input_2.setAttribute('class','col-sm-2');
+
+                    var input_3 = document.createElement("input"); 
+                    input_3.setAttribute('id','site_' + (i+1));
+                    input_3.setAttribute('type','text');
+                    input_3.setAttribute('class','col-sm-2');
+
+                    newDiv.appendChild(label_1);
+                    newDiv.appendChild(newlabel);
+                    newDiv.appendChild(input_1);
+                    newDiv.appendChild(label_2);
+                    newDiv.appendChild(input_2);
+                    newDiv.appendChild(label_3);
+                    newDiv.appendChild(input_3);
+
+                    container.appendChild(document.createElement("br"));
+                    container.appendChild(document.createElement("br"));
+                }
+                sitesResults(); 
+                
+                if(number>0){
+                    document.getElementById("seg_button").disabled = false;
+                }
+                sites = number;
+            }
+
+            function sitesResults(){
+                // Number of inputs to create
+                var container = document.getElementById("ran_analisys");
+                var number = document.getElementById("member").value;
+                while (container.hasChildNodes()) {
+                    container.removeChild(container.lastChild);
+                }
+
+                var label_t1 = document.createElement("label"); 
+                label_t1.className = "col-sm-1 parag-1";
+
+                var title_1 = document.createElement("label"); 
+                title_1.innerHTML = ("Name");
+                title_1.className = "col-sm-1";
+
+                var label_t2 = document.createElement("label"); 
+                label_t2.className = "col-sm-1 parag-1";
+
+                var title_2 = document.createElement("label"); 
+                title_2.innerHTML = ("Downlink");
+                title_2.className = "col-sm-1";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+
+                var title_3 = document.createElement("label"); 
+                title_3.innerHTML = ("Uplink");
+                title_3.className = "col-sm-1";
+
+                var label_t4 = document.createElement("label"); 
+                label_t4.className = "col-sm-1 parag-1";
+
+                var title_4 = document.createElement("label"); 
+                title_4.innerHTML = ("Downlink");
+                title_4.className = "col-sm-1";
+
+                var title_5 = document.createElement("label"); 
+                title_5.innerHTML = ("Uplink");
+                title_5.className = "col-sm-1";
+
+                var title_6 = document.createElement("label"); 
+                title_6.innerHTML = ("Downlink");
+                title_6.className = "col-sm-1";
+
+                var title_7 = document.createElement("label"); 
+                title_7.innerHTML = ("Uplink");
+                title_7.className = "col-sm-1";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+                var label_t4 = document.createElement("label"); 
+                label_t4.className = "col-sm-1 parag-1";
+
+                container.appendChild(label_t1);
+                container.appendChild(title_1);//NAME
+                container.appendChild(label_t2);
+                container.appendChild(title_2);//Downlink
+                container.appendChild(title_3);//Uplink
+                container.appendChild(label_t3);
+                container.appendChild(title_4);
+                container.appendChild(title_5);
+                container.appendChild(label_t4);
+                container.appendChild(title_6);
+                container.appendChild(title_7);
+                container.appendChild(document.createElement("br"));
+                container.appendChild(document.createElement("br"));
+
+                for (i=0;i<number;i++){
+                    var newDiv = document.createElement("div");
+                    newDiv.className = "row";
+                    container.appendChild(newDiv);
+
+                    var label_1 = document.createElement("label"); 
+                    label_1.className = "col-sm-1 parag-1";
+
+                    var label_2 = document.createElement("label"); 
+                    label_2.className = "col-sm-1 parag-1";
+
+                    var label_3 = document.createElement("label"); 
+                    label_3.className = "col-sm-1 parag-1";
+
+                    var newlabel = document.createElement("input"); 
+                    newlabel.setAttribute('id','names_ori_' + (i+1));
+                    newlabel.setAttribute('class','col-sm-3');
+                    newlabel.setAttribute('readonly','');
+                    //newlabel.setAttribute('class','result-cell');
+                    //newlabel.innerHTML = ("Polygon " + (i+1));
+                    //newlabel.className = "col-sm-2";
+                    ///newlabel.setAttribute('class','col-sm-5');
+
+                    var input_1 = document.createElement("input"); 
+                    input_1.setAttribute('id','sec_avg_dl_' + (i+1));
+                    input_1.setAttribute('type','text');
+                    input_1.setAttribute('class','col-sm-1');
+                    //input_1.setAttribute('class','result-cell');
+                    input_1.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_1.setAttribute('readonly','');
+
+                    var input_2 = document.createElement("input"); 
+                    input_2.setAttribute('id','sec_avg_ul_' + (i+1));
+                    input_2.setAttribute('type','text');
+                    input_2.setAttribute('class','col-sm-1');
+                    //input_2.setAttribute('class','result-cell');
+                    input_2.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_2.setAttribute('readonly','');
+
+                    var input_3 = document.createElement("input"); 
+                    input_3.setAttribute('id','site_th_dl_' + (i+1));
+                    input_3.setAttribute('type','text');
+                    input_3.setAttribute('class','col-sm-1');
+                    //input_3.setAttribute('class','result-cell');
+                    input_3.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_3.setAttribute('readonly','');
+
+                    var input_4 = document.createElement("input"); 
+                    input_4.setAttribute('id','site_th_ul_' + (i+1));
+                    input_4.setAttribute('type','text');
+                    input_4.setAttribute('class','col-sm-1');
+                    //input_4.setAttribute('class','result-cell');
+                    input_4.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_4.setAttribute('readonly','');
+
+                    var input_5 = document.createElement("input"); 
+                    input_5.setAttribute('id','area_th_dl_' + (i+1));
+                    input_5.setAttribute('type','text');
+                    input_5.setAttribute('class','col-sm-1');
+                    //input_5.setAttribute('class','result-cell');
+                    input_5.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_5.setAttribute('readonly','');
+
+                    var input_6 = document.createElement("input"); 
+                    input_6.setAttribute('id','area_th_ul_' + (i+1));
+                    input_6.setAttribute('type','text');
+                    input_6.setAttribute('class','col-sm-1');
+                    //input_6.setAttribute('class','result-cell');
+                    input_6.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_6.setAttribute('readonly','');
+ 
+                    newDiv.appendChild(newlabel);
+                    //newDiv.appendChild(label_1);
+                    newDiv.appendChild(input_1);
+                    newDiv.appendChild(input_2);
+                    newDiv.appendChild(label_2);
+                    newDiv.appendChild(input_3);
+                    newDiv.appendChild(input_4);
+                    newDiv.appendChild(label_3);
+                    newDiv.appendChild(input_5);
+                    newDiv.appendChild(input_6);
+
+                    container.appendChild(document.createElement("br"));
+                    //container.appendChild(document.createElement("br"));
+                } 
+            }
+         
+            function normsInv(p, mu, sigma){
+                if (p < 0 || p > 1)
+                {
+                    throw "The probality p must be bigger than 0 and smaller than 1";
+                }
+                if (sigma < 0)
+                {
+                    throw "The standard deviation sigma must be positive";
+                }
+
+                if (p == 0)
+                {
+                    return -Infinity;
+                }
+                if (p == 1)
+                {
+                    return Infinity;
+                }
+                if (sigma == 0)
+                {
+                    return mu;
+                }
+
+                var q, r, val;
+
+                q = p - 0.5;
+
+                /*-- use AS 241 --- */
+                /* double ppnd16_(double *p, long *ifault)*/
+                /*      ALGORITHM AS241  APPL. STATIST. (1988) VOL. 37, NO. 3
+
+                        Produces the normal deviate Z corresponding to a given lower
+                        tail area of P; Z is accurate to about 1 part in 10**16.
+                */
+                if (Math.abs(q) <= .425)
+                {/* 0.075 <= p <= 0.925 */
+                    r = .180625 - q * q;
+                    val =
+                        q * (((((((r * 2509.0809287301226727 +
+                                    33430.575583588128105) * r + 67265.770927008700853) * r +
+                                    45921.953931549871457) * r + 13731.693765509461125) * r +
+                                1971.5909503065514427) * r + 133.14166789178437745) * r +
+                                3.387132872796366608)
+                        / (((((((r * 5226.495278852854561 +
+                                    28729.085735721942674) * r + 39307.89580009271061) * r +
+                                21213.794301586595867) * r + 5394.1960214247511077) * r +
+                                687.1870074920579083) * r + 42.313330701600911252) * r + 1);
+                }
+                else
+                { /* closer than 0.075 from {0,1} boundary */
+
+                    /* r = min(p, 1-p) < 0.075 */
+                    if (q > 0)
+                        r = 1 - p;
+                    else
+                        r = p;
+
+                    r = Math.sqrt(-Math.log(r));
+                    /* r = sqrt(-log(r))  <==>  min(p, 1-p) = exp( - r^2 ) */
+
+                    if (r <= 5)
+                    { /* <==> min(p,1-p) >= exp(-25) ~= 1.3888e-11 */
+                        r += -1.6;
+                        val = (((((((r * 7.7454501427834140764e-4 +
+                                .0227238449892691845833) * r + .24178072517745061177) *
+                                r + 1.27045825245236838258) * r +
+                                3.64784832476320460504) * r + 5.7694972214606914055) *
+                            r + 4.6303378461565452959) * r +
+                            1.42343711074968357734)
+                            / (((((((r *
+                                    1.05075007164441684324e-9 + 5.475938084995344946e-4) *
+                                    r + .0151986665636164571966) * r +
+                                .14810397642748007459) * r + .68976733498510000455) *
+                                r + 1.6763848301838038494) * r +
+                                2.05319162663775882187) * r + 1);
+                    }
+                    else
+                    { /* very close to  0 or 1 */
+                        r += -5;
+                        val = (((((((r * 2.01033439929228813265e-7 +
+                                2.71155556874348757815e-5) * r +
+                                .0012426609473880784386) * r + .026532189526576123093) *
+                                r + .29656057182850489123) * r +
+                            1.7848265399172913358) * r + 5.4637849111641143699) *
+                            r + 6.6579046435011037772)
+                            / (((((((r *
+                                    2.04426310338993978564e-15 + 1.4215117583164458887e-7) *
+                                    r + 1.8463183175100546818e-5) * r +
+                                7.868691311456132591e-4) * r + .0148753612908506148525)
+                                * r + .13692988092273580531) * r +
+                                .59983220655588793769) * r + 1);
+                    }
+
+                    if (q < 0.0)
+                    {
+                        val = -val;
+                    }
+                }
+
+                return mu + sigma * val;
+            }
+
+         </script>
+    </body>
+</html>
