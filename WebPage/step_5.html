@@ -23,7 +23,7 @@
             <li class="li_superior"><a href="comming_soon/comming-soon.html">About</a></li>
             
             <li class="topnav-right"><a href="#" onclick="switchContent('#e2e')">Next Steps</a></li>
-            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Architecture</a></li>
+            <li class="topnav-right"><a href="#" onclick="switchContent('#fm')">Network Design</a></li>
             <li class="topnav-right"><a href="#" onclick="switchContent('#hld')">Introduction</a></li>
         </ul>
     </div>
@@ -43,10 +43,10 @@
                             <i class="glyphicon glyphicon-option-horizontal"></i>
                             PlayBook Steps
                         </a>
-                        <ul class="list-unstyled collapse" id="runbookSubmenu">
+                        <ul class="list-unstyled " id="runbookSubmenu">
                                 
                             <li>
-                                <a href="step_1.html" class="panel-collapse" data-toggle="collapse">
+                                <a href="step_1.html" data-toggle="panel-collapse" data-toggle="collapse">
                                     &#187 Step One
                                 </a>
                             </li>
@@ -67,7 +67,7 @@
                             </li>
                             <li>
                                 <a href="step_5.html" data-toggle="panel-collapse" aria-expanded="collapse">
-                                    &#187 Step Five
+                                    <b style="color:black">&#187 Step Five</b>
                                 </a>
                             </li>
                             <li>
@@ -145,7 +145,7 @@
                             the baseline concepts that you'll require to develop the preliminary network
                             design. </p>
                             
-                            <h3><a></a>5.1.1
+                            <h3>5.1.1
                             End-to-end View</h3>
                             
                             <p class="normal-text">Figure 5.1 displays the generic network
@@ -179,7 +179,7 @@
                             
                             <p class="normal-text"><b></b></p>
                             
-                            <h3><a></a>5.1.2
+                            <h3>5.1.2
                             RAN Design Considerations</h3>
                             
                             <p class="normal-text">The main objective of the RAN design is to
@@ -205,7 +205,7 @@
                             the <a class="a_link" href="ran_dimensioning_widget.html">RAN Dimensioning
                             Widget</a>. The following sections provide a closer look at these analyses. </p>
                             
-                            <br><h4><a></a>5.1.2.1
+                            <br><h4>5.1.2.1
                             How much area can be covered by a RAN Site?</h4>
                             
                             <p class="normal-text">The area that a RAN site can cover depends
@@ -232,7 +232,7 @@
                             analysis is included as part of the <a class="a_link" href="ran_dimensioning_widget.html">RAN
                             Dimensioning Widget</a>.</p>
                             
-                            <br><h4><a></a>5.1.2.2
+                            <br><h4>5.1.2.2
                             How many users can be supported by a RAN Site?</h4>
                             
                             <p class="normal-text">The number of users that a RAN site can
@@ -257,7 +257,7 @@
                             
                             
                             
-                            <br><h3><a></a>5.1.3
+                            <br><h3>5.1.3
                             Backhaul Design Considerations</h3>
                             
                             <p class="normal-text">This section describes the different
@@ -266,7 +266,7 @@
                             fiber optic, microwave and satellite. You can find more details about these
                             technologies in <a class="a_link" href="step_4.html">step 4</a>. </p>
                             
-                            <h4><a></a>5.1.3.1
+                            <h4>5.1.3.1
                             Microwave Technology</h4>
                             
                             <p class="normal-text">Microwave backhaul uses antennas that are
@@ -334,7 +334,7 @@
                             determines if any relevant obstacles may block the path from the transmitter to
                             the receiver.</p>
                             
-                            <h4><a></a>5.1.3.2
+                            <h4>5.1.3.2
                             Fiber Optic Technology</h4>
                             
                             <p class="normal-text">Fiber optic is a wired backhaul technology
@@ -353,7 +353,7 @@
                             used to deploy the fiber optic cable. This route may include paved rural or
                             urban roads, electrical grid, posts, or &mdash;more likely&mdash; some combination thereof.</p>
                             
-                            <h4><a></a>5.1.3.3
+                            <h4>5.1.3.3
                             Satellite Technology</h4>
                             
                             <p class="normal-text">Satellite technology is deployed in fringe
@@ -373,7 +373,7 @@
                             
                             
                             
-                            <h3><a></a>5.1.4
+                            <h3>5.1.4
                             Core Design Considerations</h3>
                             
                             <p class="normal-text">The core site is the principal aggregation
@@ -407,16 +407,13 @@
                     <br>
                 </div>
 
+                
+
                 <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
                     <nav class="nav nav-pills flex-column">
                     
-                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>1. INTRODUCTION</strong></a>
-                    <a id="link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2"><strong>2. FIXED WIRELESS ARCHITECTURE ESSENTIALS</strong></a>
-                    <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-1"><em>2.1 Radio Access Network Architecture</em></a>
-                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-2"><em>2.2 Backhaul Architecture</em></a>
-                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-3"><em>2.3 Core Architecture</em></a>
-                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-4"><em>2.4 Internet Protocol (IP) Architecture</em></a>
-                    <a id="link-6" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item2-5"><em>2.5 Systems Architecture</em></a>
+                    <a id="link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1"><strong>STEP 5. DEVELOP PRELIMINARY NETWORK DESIGN</strong></a>
+                    <a id="link-5" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item1-1"><em>5.1 Network Design Essentials</em></a>
                     </nav>
                 </nav>
            </section>
@@ -425,7 +422,7 @@
             <div id="content"> 
                 
                 <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-                    <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">5.2
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-2" name="item3">5.2
                         Generating the Network Design </a></h2>
                         
                         <p class="normal-text">The <b>network design
@@ -511,8 +508,8 @@
                         
                         
                         
-                        <h3><a></a>5.2.1
-                        Task 1. Identify Target Polygons</h3>
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-1">5.2.1
+                        Task 1. Identify Target Polygons</a></h3>
                         
                         <p class="normal-text">This task aims to clearly identify the <b>target
                         polygons</b>, which determine the specific area where your broadband services
@@ -603,9 +600,9 @@
                         
                         
                         
-                        <h3><a></a>5.2.2
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-2">5.2.2
                         Task 2. Identify existing assets feasible for
-                        deployment</h3>
+                        deployment</a></h3>
                         
                         <p class="normal-text">This task's objective is to accurately
                         identify the <b>existing assets</b> that can be used as part of the network.
@@ -699,8 +696,8 @@
                         
                         
                         
-                        <h3><a></a>5.2.3
-                        Task 3. Estimate number of RAN sites</h3>
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-3">5.2.3
+                        Task 3. Estimate number of RAN sites</a></h3>
                         
                         <p class="normal-text">The next task in the network design process
                         is to estimate the <b>number of RAN sites</b> required to cover the target
@@ -832,9 +829,9 @@
                         
                         
                         
-                        <h3><a></a>5.2.4
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-4">5.2.4
                         Task 4. Define RAN site locations and
-                        configuration</h3>
+                        configuration</a></h3>
                         
                         <p class="normal-text">After estimating the number of RAN sites
                         required to cover the target polygon, the next task is to define the location
@@ -1294,8 +1291,8 @@
                         
                         
                         
-                        <h3><a></a>5.2.5
-                        Task 5. Calculate RAN site coverage</h3>
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-5">5.2.5
+                        Task 5. Calculate RAN site coverage</a></h3>
                         
                         <p class="normal-text">The following task in the design process is
                         to estimate the actual number of homes covered by each RAN Site. The following
@@ -1561,8 +1558,8 @@
                         
                         
                         
-                        <h3><a></a>5.2.6
-                        Task 6. Assess Backhaul technologies</h3>
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-6">5.2.6
+                        Task 6. Assess Backhaul technologies</a></h3>
                         
                         <p class="normal-text">Once all the RAN sites have been defined,
                         the next task is to provide connectivity for each of them. To this end, an assessment
@@ -1662,9 +1659,9 @@
                         
                         
                         
-                        <h3><a></a>5.2.7
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-7">5.2.7
                         Task 7. Define Backhaul technology and
-                        configuration</h3>
+                        configuration</a></h3>
                         
                         <p class="normal-text">At this point, you already know how to
                         evaluate the feasibility of each backhaul technology. The next task in the
@@ -1974,8 +1971,8 @@
                         
                         
                         
-                        <h3><a></a>5.2.8
-                        Task 8. Confirm network capacity</h3>
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-8">5.2.8
+                        Task 8. Confirm network capacity</a></h3>
                         
                         <p class="normal-text">Moving forward in the network design
                         process, the next task is to estimate the network traffic that needs to be
@@ -2034,17 +2031,16 @@
                         
                         
                         
-                        <h3><a></a>5.2.9
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-9">5.2.9
                         Task 9. Define location and configuration of
-                        core site</h3>
+                        core site</a></h3>
                         
                         <p class="normal-text">The last technical task in the network
                         design process is to define the location of the core site. This decision
                         depends on where is located the primary internet point in the tribal land. </p>
                         
-                        <p class="normal-text"><img border=0 width=26 height=26
-                        src="images/image066.png">������ <b><i><u>Use the HLD Template to record the core site
-                        location</u></i></b></p>
+                        <p class="normal-text"><i><img border=0 width=26 height=26 id="Imagen 91"
+                            src="images/network_planning/image056.png"></i><b><i><u>Use the HLD Template to record the core site location</u></i></b></p>
                         
                         <p class="normal-text">The <a class="a_link" href="https://github.com/teleworxllc/TribalPlaybook/blob/gh-pages/MoE/HLD%20Template_v1.xlsm">HLD
                         Template</a> is used to maintain a single and unique record of the attributes
@@ -2059,10 +2055,10 @@
                         section. In this section, identify the core site attribute, as shown in Figure
                         5.42.</p>
                         
-                        <p class="normal-text"><img border=0 width=590 height=29 id=image94.png
-                        src="images/image107.jpg"></p>
+                        <p class="normal-text"><img border=0 width=590 height=29 id="Imagen 94"
+                            src="images/network_planning/image063.jpg"></p>
                         
-                        <p align=center><i>Figure 5.42 � Core site attribute in the
+                        <p align=center><i>Figure 5.42 &mdash; Core site attribute in the
                         HLD template</i></p>
                         
                         <p class="normal-text">2.
@@ -2071,59 +2067,56 @@
                         
                         <div align=center>
                         
-                        <table class=a9 border=0 cellspacing=0 cellpadding=0 width=468
-                         style='border-collapse:collapse'>
-                         <tr style='height:15.75pt'>
-                          <td width=68 style='width:51.0pt;border:solid black 1.0pt;background:#002060;
-                          padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
-                          <p class="normal-text"><b>Parameter</b></p>
-                          </td>
-                          <td width=267 style='width:200.15pt;border:solid black 1.0pt;border-left:
-                          none;background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
-                          <p class="normal-text"><b>Description</b></p>
-                          </td>
-                          <td width=38 style='width:28.85pt;border:solid black 1.0pt;border-left:none;
-                          background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
-                          <p class="normal-text"><b>Units</b></p>
-                          </td>
-                          <td width=95 style='width:70.95pt;border:solid black 1.0pt;border-left:none;
-                          background:#002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
-                          <p class="normal-text"><b>Possible Values</b></p>
-                          </td>
-                         </tr>
-                         <tr style='height:26.25pt'>
-                          <td width=68 style='width:51.0pt;border:solid black 1.0pt;border-top:none;
-                          background:#D9D9D9;padding:0cm 3.5pt 0cm 3.5pt;height:26.25pt'>
-                          <p class="normal-text">Core Site</p>
-                          </td>
-                          <td width=267 style='width:200.15pt;border-top:none;border-left:none;
-                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
-                          height:26.25pt'>
-                          <p class="normal-text">Indicates if
-                          the site corresponds to the core site</p>
-                          </td>
-                          <td width=38 style='width:28.85pt;border-top:none;border-left:none;
-                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
-                          height:26.25pt'>
-                          
-                          </td>
-                          <td width=95 style='width:70.95pt;border-top:none;border-left:none;
-                          border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;
-                          height:26.25pt'>
-                          <p class="normal-text">[Yes, No]</p>
-                          </td>
-                         </tr>
-                        </table>
+                            <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+                            style='border-collapse:collapse'>
+                            <tr style='height:15.75pt'>
+                             <td nowrap style='border:solid windowtext 1.0pt;background:#002060;
+                             padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+                             <p align=center style="color:#FFF"><b>Parameter</b></p>
+                             </td>
+                             <td nowrap style='border:solid windowtext 1.0pt;border-left:none;background:
+                             #002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+                             <p align=center style="color:#FFF"><b>Description</b></p>
+                             </td>
+                             <td nowrap style='border:solid windowtext 1.0pt;border-left:none;background:
+                             #002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+                             <p align=center style="color:#FFF"><b>Units</b></p>
+                             </td>
+                             <td nowrap style='border:solid windowtext 1.0pt;border-left:none;background:
+                             #002060;padding:0cm 3.5pt 0cm 3.5pt;height:15.75pt'>
+                             <p align=center style="color:#FFF"><b>Possible Values</b></p>
+                             </td>
+                            </tr>
+                            <tr style='height:26.25pt'>
+                             <td style='border:solid windowtext 1.0pt;border-top:none;background:#D9D9D9;
+                             padding:0cm 3.5pt 0cm 3.5pt;height:26.25pt'>
+                             <p class="normal-text">Core Site</p>
+                             </td>
+                             <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+                             border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:26.25pt'>
+                             <p class="normal-text">Indicates if
+                             the site corresponds to the core site</p>
+                             </td>
+                             <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+                             border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:26.25pt'>
+                             
+                             </td>
+                             <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+                             border-right:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:26.25pt'>
+                             <p class="normal-text">[Yes, No]</p>
+                             </td>
+                            </tr>
+                           </table>
                         
                         </div>
                         
-                        <p align=center><i>Table 5.6 � HLD attributes guidelines for backhaul solution</i></p>
+                        <p align=center><i>Table 5.6 &mdash; HLD attributes guidelines for backhaul solution</i></p>
                         
                         <div style='border:solid black 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
                         background:#EFEFEF'>
                         
-                        <p class="normal-text"><img border=0 width=26 height=26 id=image88.png
-                        src="images/image068.png"><b><i>������ Design Example</i></b></p>
+                        <p class="normal-text"><i><img border=0 width=26 height=26 id="Imagen 89"
+                            src="images/network_planning/image058.png"></i><b><i> Design Example</i></b></p>
                         
                         <p class="normal-text">In this example, the core
                         site attributes were filled following the instructions. Figure 5.43 displays
@@ -2131,25 +2124,25 @@
                         locate the core site elements. </p>
                         
                         <p class="normal-text"><img border=0
-                        width=590 height=76 id=image86.png
-                        src="images/image108.jpg"></p>
+                            width=590 height=76 id="Imagen 95"
+                            src="images/network_planning/image064.jpg"></p>
                         
-                        <p align=center><i>Figure 5.43 � Core site
+                        <p align=center><i>Figure 5.43 &mdash; Core site
                         information for the design example</i></p>
                         
                         </div>
                         
-                        <h3><a></a>5.2.10
-                        Task 10. Generate Financial Model Outputs</h3>
+                        <h3><a class="titulo-h2 anchor-bum color-luminati-2" name="item3-10">5.2.10
+                        Task 10. Generate Financial Model Outputs</a></h3>
                         
                         <p class="normal-text">Until this point, you have already
                         performed all the technical tasks involved in the design process. To be ready
                         for the next stages in your journey, you need to export the Financial Model's
                         relevant information. </p>
                         
-                        <p class="normal-text"><img border=0 width=26 height=26 id=image23.png
-                        src="images/image066.png">������ <b><i><u>Use the HLD Template to generate the Financial Model
-                        Input File</u></i></b></p>
+                        <p class="normal-text"><i><img border=0 width=26 height=26 id="Imagen 92"
+                            src="images/network_planning/image056.png"></i> <b><i><u>Use the HLD Template to generate the Financial Model
+                            Input File</u></i></b></p>
                         
                         <p class="normal-text">The HLD information that you have loaded
                         during the design process can be exported directly from the <a class="a_link" href="https://github.com/teleworxllc/TribalPlaybook/blob/gh-pages/MoE/HLD%20Template_v1.xlsm">HLD Template</a>. The <a class="a_link" href="">financial model</a> will use this information to support the network
@@ -2157,31 +2150,58 @@
                         
                         <p class="normal-text">To export the required information to
                         create the Financial Model, follow the instructions below: </p>
-                        
-                        <p class="normal-text">1.
-                        In the <b>Dashboard </b>sheet
-                        from the <a class="a_link" href="https://github.com/teleworxllc/TribalPlaybook/blob/gh-pages/MoE/HLD%20Template_v1.xlsm">HLD
-                        Template</a>, identify the <b>Export to Financial
-                        Model</b>, as in Figure 5.44. </p>
+
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li class="normal-text">In the <b>Dashboard </b>sheet from the <a class="a_link" href="https://github.com/teleworxllc/TribalPlaybook/blob/gh-pages/MoE/HLD%20Template_v1.xlsm">HLD Template</a>, identify the <b>Export
+                        to Financial Model</b>, as in Figure 5.44. </li>
+                        </ol>
                         
                         <p class="normal-text"><img border=0
-                        width=499 height=107 id=image92.png
-                        src="images/image109.jpg"></p>
+                            width=493 height=106 id="Imagen 14"
+                            src="images/network_planning/image065.jpg"></p>
                         
-                        <p align=center><i>Figure 5.44 � Export to Financial Model
+                        <p align=center><i>Figure 5.44 &mdash; Export to Financial Model
                         section in the HLD template</i></p>
                         
-                        <p class="normal-text">2.
-                        Click the <b>Export
-                        Financial Model Button</b> and select the location and name for the output
-                        file. </p>
+                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type=1>
+                            <li class="normal-text">Click the <b>Export Financial Model Button</b> and
+                        select the location and name for the output file. </li>
                         
-                        <p class="normal-text">3.
-                        Once the exporting is
-                        finished, you can find the exported file in the location you introduced
-                        previously. </p>
-                        
-                        <br><h2><a class="titulo-h2 anchor-bum color-luminati" name="itemX-X">5.3
+                        <li class="normal-text">Once the exporting is finished, you can find the
+                        exported file in the location you introduced in the previous step. </li>
+                        </ol>
+                </div>
+
+                <a class='link-next' href="#" onclick="switchContent('#hld')"> &#8656; Previous</a>
+                <a href="url" align="center"></a>
+                <div class="right">
+                <a ></a>
+                <a class="link-next" href="#" onclick="switchContent('#e2e')">Next &#8658;</a>
+                </div>
+                <br>
+
+                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
+                    <nav class="nav nav-pills flex-column">
+                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>5.2 Generating the Network Design</strong></a>
+                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>Step 1. Identify Target Polygons</em></a>
+                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>Step 2. Identify existing assets feasible for deployment</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>Step 3. Estimate number of RAN sites</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-4"><em>Step 4. Define RAN site locations and configuration</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-5"><em>Step 5. Calculate RAN site coverage</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-6"><em>Step 6. Assess Backhaul technologies</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-7"><em>Step 7. Define Backhaul technology and configuration</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-8"><em>Step 8. Confirm network capacity</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-9"><em>Step 9. Define location and configuration of core site</em></a>
+                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-10"><em>Step 10. Generate Financial Model Outputs</em></a>
+                    </nav>
+                </nav>
+           </section>
+
+           <section id="e2e" hidden>
+            <div id="content">
+
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <br><h2><a class="titulo-h2 anchor-bum color-luminati-3" name="item4">5.3
                         Next steps</a></h2>
                         
                         <p class="normal-text">Once you have developed your preliminary
@@ -2214,88 +2234,19 @@
                         performance or a better adaption to your scenario. </p>
                 </div>
 
-                <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
-                    <nav class="nav nav-pills flex-column">
-                        <a id="fm_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3"><strong>3. ESTABLISHING YOUR NETWORK ARCHITECTURE</strong></a>
-                        <a id="fm_link-2" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-1"><em>3.1 Define coverage targets and export data from the Tribal Mapping tool</em></a>
-                        <a id="fm_link-3" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-2"><em>3.2 Operate the Network Architecture wizard</em></a>
-                        <a id="fm_link-4" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item3-3"><em>3.3 Compare and choose the suitable network architecture</em></a>
-                    </nav>
-                </nav>
-           </section>
-
-           <section id="e2e" hidden>
-            <div id="content">
-
-                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-                    <h1><a class="titulo-h1 anchor-bum color-luminati-3" name="item4">4
-                        Next steps in the journey</a></h1>
-                        
-                        <p class="normal-text">The network architecture module is linked
-                        with the following modules in the Tribal Land journey: <a class="a_link" href="network_planning.html">Network
-                        Planning &amp; Design</a> and <a class="a_link" href="rfx_assessment.html">RFx &amp; Vendor Assessment</a>.
-                        These steps are shown in Figure 27 as steps 5 and 6 respectively of
-                        the Tribal Land Journey.</p>
-                        
-                        <p class="normal-text"><img width=669 height=242 id="Picture 44"
-                        src="images/network_architecture/image033.png"></p>
-                        
-                        <p align=center><i><a>Figure </a>27. &mdash; Next steps in the Tribal Land Journey</i></p>
-                        
-                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                                <li><a class="a_link" href="network_planning.html">Network Planning &amp; Design module</a></li>
-                            </ul>
-                        
-                        <p class="normal-text">The defined
-                        network architecture will serve as a guideline during the design process.
-                        Network designer must consider the resultant architecture as a starting point
-                        of its design. Main points to be considered are:</p>
-                        
-                        <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                            <li class="normal-text">RAN technology</li>
-                            <li class="normal-text">CPE option</li>
-                            <li class="normal-text">Spectrum band</li>
-                            <li class="normal-text">Transport technology</li>
-                            <li class="normal-text">Core architecture</li>
-                            <li class="normal-text">VLANs and IP addressing</li>
-                        </ol>
-                        
-                        <p class="normal-text">Keep in mind
-                        that the defined network architecture can be modified after the network
-                        planning &amp; design process has been made. Network designer may conclude that
-                        modifications to certain network segment(s) could mean an improvement in terms
-                        of performance or improve the performance of the of the overall network or a
-                        better adaption to the Tribal Land scenario.</p>
-                        
-                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                            <li><a class="a_link" href="vendor_assesment.html">RFx &amp; Vendor Assessment module</a></li>
-                        </ul>
-                        
-                        <p class="normal-text">An important
-                        part of the architecture wizard report is the section containing the
-                        Engineering Guidelines. These guidelines summarize required equipment
-                        specifications to support the recommended network architecture.</p>
-                        
-                        <p class="normal-text">These equipment
-                        requirements must be considered during the RFx process for the creation of the
-                        RFP and for vendor evaluation. Equipment requirements cover all segments of the
-                        FWA network: RAN, transport, core, IP, and systems.</p>
-
-                </div>
-
-                <a href="#" class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
                 <br>
-                <a href="url" align="center"></a>
-                <div class="right">
+                <a class='link-next' class="link-next" onclick="switchContent('#fm')"> &#8656; Previous</a>
+                    <a href="url" align="center"></a>
+                    <div class="right">
                     <a ></a>
-                    <a href="#">.</a>
-                </div>
+                    <a class="link-next" href="step_6.html">Step Six &#8658;</a>
+                <br>
 
             </div>
               
             <nav id="navbar-example3" class="navbar navbar-light bg-light position-fixed">
              <nav class="nav nav-pills flex-column">
-                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>4. NEXT STEPS IN THE JOURNEY</strong></a>
+                <a id="e2e_link-1" class="nav-link bullet-2-link" onclick="onClickActive(event)" href="#item4"><strong>5.3 NEXT STEPS</strong></a>
              </nav>
          </nav>
         </section>  
