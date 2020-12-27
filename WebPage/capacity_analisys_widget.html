@@ -454,6 +454,7 @@
                 
 
                 fillFields();
+                //fillFields_2(); //PARA TX
                 document.getElementById("value1").value = value1_int;  
             });
 
@@ -518,6 +519,58 @@
                 }
 
                 for(var i=1; i<=sites; i++){
+
+                    var secavg_dl = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form3_var / (form5_var*form6_var*value1_int));
+                    var secavg_ul = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form4_var / (form5_var*form6_var*value1_int));
+                    console.log(names['name_pol_'+i+'_var']);
+                    document.getElementById("names_ori_"+i).value = names['name_pol_'+i+'_var'];
+                    document.getElementById("sec_avg_dl_"+i).value =  secavg_dl.toFixed(2);
+                    document.getElementById("sec_avg_ul_"+i).value =  secavg_ul.toFixed(2);
+                    document.getElementById("site_th_dl_"+i).value = (secavg_dl*value1_int).toFixed(2);
+                    document.getElementById("site_th_ul_"+i).value = (secavg_ul*value1_int).toFixed(2);
+                    document.getElementById("area_th_dl_"+i).value = ((secavg_dl*value1_int) * sites_arr[('site_'+i+'_var')]).toFixed(2);
+                    document.getElementById("area_th_ul_"+i).value = ((secavg_ul*value1_int) * sites_arr[('site_'+i+'_var')]).toFixed(2);
+
+                    var last_mile_cap_dl;
+                    var last_mile_cap_ul;
+                    var agg_cap_dl;
+                    var agg_cap_ul;
+                    (form7_var == 'no') ? (last_mile_cap_dl = ((secavg_dl*value1_int) * 1.14)) : (last_mile_cap_dl = ((secavg_dl*value1_int) * 1.28)) ;
+                    (form7_var == 'no') ? (last_mile_cap_ul = ((secavg_ul*value1_int) * 1.14)) : (last_mile_cap_ul = ((secavg_ul*value1_int) * 1.28)) ;
+                    (form7_var == 'no') ? (agg_cap_dl = (((secavg_dl*value1_int) * sites_arr[('site_'+i+'_var')]) * 1.14)) : (agg_cap_dl = (((secavg_dl*value1_int) * sites_arr[('site_'+i+'_var')]) * 1.28)) ;
+                    (form7_var == 'no') ? (agg_cap_ul = (((secavg_ul*value1_int) * sites_arr[('site_'+i+'_var')]) * 1.14)) : (agg_cap_ul = (((secavg_ul*value1_int) * sites_arr[('site_'+i+'_var')]) * 1.28)) ;
+
+                    document.getElementById("names_ori_tx_"+i).value = names['name_pol_'+i+'_var'];
+                    document.getElementById("last_mile_dl_"+i).value = last_mile_cap_dl.toFixed(2);
+                    document.getElementById("last_mile_ul_"+i).value = last_mile_cap_ul.toFixed(2);
+                    document.getElementById("agg_dl_"+i).value = agg_cap_dl.toFixed(2);
+                    document.getElementById("agg_ul_"+i).value = agg_cap_ul.toFixed(2);
+                }
+            }
+
+            function fillFields_2(){
+                var names = [];
+                var sites_arr = [];
+                var houses = [];
+
+                
+                last_mile_dl_
+                last_mile_ul_
+                agg_dl
+                agg_ul
+
+                for(var i=1; i<=sites; i++){
+                    var name_1 = 'name_pol_' + i;
+                    var hous_1 = 'hou_uni_' + i;
+                    var site_1 = 'site_' + i;
+
+                    names[name_1 + '_var'] = document.getElementById('name_pol_' + i).value;
+                    houses[hous_1 + '_var'] = document.getElementById('hou_uni_' + i).value;
+                    sites_arr[site_1 + '_var'] = document.getElementById('site_' + i).value;
+                }
+
+                for(var i=1; i<=sites; i++){
+
 
                     var secavg_dl = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form3_var / (form5_var*form6_var*value1_int));
                     var secavg_ul = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form4_var / (form5_var*form6_var*value1_int));
@@ -632,6 +685,7 @@
                     container.appendChild(document.createElement("br"));
                 }
                 sitesResults(); 
+                sitesResults_2();
                 
                 if(number>0){
                     document.getElementById("seg_button").disabled = false;
@@ -791,6 +845,196 @@
                     container.appendChild(document.createElement("br"));
                     //container.appendChild(document.createElement("br"));
                 } 
+            }
+         
+            function sitesResults_2(){
+                // Number of inputs to create
+                var container = document.getElementById("tx_analysis");
+                var number = document.getElementById("member").value;
+                while (container.hasChildNodes()) {
+                    container.removeChild(container.lastChild);
+                }
+
+                var label_t1 = document.createElement("label"); 
+                label_t1.className = "col-sm-1 parag-1";
+
+                var title_1 = document.createElement("label"); 
+                title_1.innerHTML = ("Name");
+                title_1.className = "col-sm-1";
+
+                var label_t2 = document.createElement("label"); 
+                label_t2.className = "col-sm-1 parag-1";
+
+                var title_2 = document.createElement("label"); 
+                title_2.innerHTML = ("Downlink");
+                title_2.className = "col-sm-1";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+
+                var title_3 = document.createElement("label"); 
+                title_3.innerHTML = ("Uplink");
+                title_3.className = "col-sm-1";
+
+                var label_t4 = document.createElement("label"); 
+                label_t4.className = "col-sm-1 parag-1";
+
+                var title_4 = document.createElement("label"); 
+                title_4.innerHTML = ("Downlink");
+                title_4.className = "col-sm-1";
+
+                var title_5 = document.createElement("label"); 
+                title_5.innerHTML = ("Uplink");
+                title_5.className = "col-sm-1";
+
+                var title_6 = document.createElement("label"); 
+                title_6.innerHTML = ("Downlink");
+                title_6.className = "col-sm-1";
+
+                var title_7 = document.createElement("label"); 
+                title_7.innerHTML = ("Uplink");
+                title_7.className = "col-sm-1";
+
+                var label_t3 = document.createElement("label"); 
+                label_t3.className = "col-sm-1 parag-1";
+                var label_t4 = document.createElement("label"); 
+                label_t4.className = "col-sm-2 parag-1";
+
+                container.appendChild(label_t4);
+                container.appendChild(label_t1);
+                container.appendChild(title_1);//NAME
+                container.appendChild(label_t2);
+                container.appendChild(title_2);//Downlink
+                container.appendChild(title_3);//Uplink
+                container.appendChild(label_t3);
+                container.appendChild(title_4);
+                container.appendChild(title_5);
+                
+                container.appendChild(document.createElement("br"));
+                container.appendChild(document.createElement("br"));
+
+                for (i=0;i<number;i++){
+                    var newDiv = document.createElement("div");
+                    newDiv.className = "row";
+                    container.appendChild(newDiv);
+
+                    var label_1 = document.createElement("label"); 
+                    label_1.className = "col-sm-1 parag-1";
+
+                    var label_2 = document.createElement("label"); 
+                    label_2.className = "col-sm-1 parag-1";
+
+                    var label_3 = document.createElement("label"); 
+                    label_3.className = "col-sm-2 parag-1";
+
+                    var newlabel = document.createElement("input"); 
+                    newlabel.setAttribute('id','names_ori_tx_' + (i+1));
+                    newlabel.setAttribute('class','col-sm-3');
+                    newlabel.setAttribute('readonly','');
+                    //newlabel.setAttribute('class','result-cell');
+                    //newlabel.innerHTML = ("Polygon " + (i+1));
+                    //newlabel.className = "col-sm-2";
+                    ///newlabel.setAttribute('class','col-sm-5');
+
+                    var input_1 = document.createElement("input"); 
+                    input_1.setAttribute('id','last_mile_dl_' + (i+1));
+                    input_1.setAttribute('type','text');
+                    input_1.setAttribute('class','col-sm-1');
+                    //input_1.setAttribute('class','result-cell');
+                    input_1.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_1.setAttribute('readonly','');
+
+                    var input_2 = document.createElement("input"); 
+                    input_2.setAttribute('id','last_mile_ul_' + (i+1));
+                    input_2.setAttribute('type','text');
+                    input_2.setAttribute('class','col-sm-1');
+                    //input_2.setAttribute('class','result-cell');
+                    input_2.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_2.setAttribute('readonly','');
+
+                    var input_3 = document.createElement("input"); 
+                    input_3.setAttribute('id','agg_dl_' + (i+1));
+                    input_3.setAttribute('type','text');
+                    input_3.setAttribute('class','col-sm-1');
+                    //input_3.setAttribute('class','result-cell');
+                    input_3.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_3.setAttribute('readonly','');
+
+                    var input_4 = document.createElement("input"); 
+                    input_4.setAttribute('id','agg_ul_' + (i+1));
+                    input_4.setAttribute('type','text');
+                    input_4.setAttribute('class','col-sm-1');
+                    //input_4.setAttribute('class','result-cell');
+                    input_4.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                    input_4.setAttribute('readonly','');
+ 
+                    newDiv.appendChild(label_3);
+                    newDiv.appendChild(newlabel);
+                    //newDiv.appendChild(label_1);
+                    newDiv.appendChild(input_1);
+                    newDiv.appendChild(input_2);
+                    newDiv.appendChild(label_2);
+                    newDiv.appendChild(input_3);
+                    newDiv.appendChild(input_4);
+                    
+
+                    container.appendChild(document.createElement("br"));
+                    //container.appendChild(document.createElement("br"));
+                } 
+
+                var tx_total = document.createElement("label"); 
+                tx_total.innerHTML = ("TOTAL");
+                tx_total.setAttribute('class','col-sm-3');
+                tx_total.setAttribute('style','font-weight:bold;text-align: center;font-size: 18px;');
+                
+                var input_total_dl = document.createElement("input"); 
+                input_total_dl.setAttribute('id','last_mile_dl_total');
+                input_total_dl.setAttribute('type','text');
+                input_total_dl.setAttribute('class','col-sm-1');
+                //input_1.setAttribute('class','result-cell');
+                input_total_dl.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                input_total_dl.setAttribute('readonly','');
+
+                var input_total_ul = document.createElement("input"); 
+                input_total_ul.setAttribute('id','last_mile_ul_total');
+                input_total_ul.setAttribute('type','text');
+                input_total_ul.setAttribute('class','col-sm-1');
+                //input_1.setAttribute('class','result-cell');
+                input_total_ul.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                input_total_ul.setAttribute('readonly','');
+
+                var agg_tl = document.createElement("input"); 
+                agg_tl.setAttribute('id','agg_dl_total');
+                agg_tl.setAttribute('type','text');
+                agg_tl.setAttribute('class','col-sm-1');
+                //input_1.setAttribute('class','result-cell');
+                agg_tl.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                agg_tl.setAttribute('readonly','');
+
+                var agg_ut = document.createElement("input"); 
+                agg_ut.setAttribute('id','agg_ul_total');
+                agg_ut.setAttribute('type','text');
+                agg_ut.setAttribute('class','col-sm-1');
+                //input_1.setAttribute('class','result-cell');
+                agg_ut.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
+                agg_ut.setAttribute('readonly','');
+
+                var label_2_t = document.createElement("label"); 
+                label_2_t.className = "col-sm-1 parag-1";
+
+                var label_3_t = document.createElement("label"); 
+                label_3_t.className = "col-sm-2 parag-1";
+
+                container.appendChild(label_3_t);
+                container.appendChild(tx_total);
+                //newDiv.appendChild(label_1);
+                container.appendChild(input_total_dl);
+                container.appendChild(input_total_ul);
+                container.appendChild(label_2_t);
+                container.appendChild(agg_tl);
+                container.appendChild(agg_ut);
+                container.appendChild(document.createElement("br"));
+                container.appendChild(document.createElement("br"));
             }
          
             function normsInv(p, mu, sigma){
