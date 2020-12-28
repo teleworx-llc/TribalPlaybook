@@ -378,11 +378,11 @@
                 <div class="row">
                     <label  class="col-sm-1 parag-1"></label>
                     <label  class="col-sm-2 parag-1">Mobile Core</label >
-                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                    <input id='value2' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                     <label  class="col-sm-1 parag-1"></label>
-                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                    <input id='value3' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                     <label  class="col-sm-1 parag-1"></label>
-                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                    <input id='value4' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                 </div>
                 <br>
                 <div class="row">
@@ -393,7 +393,7 @@
                 <div class="row">
                     <label  class="col-sm-1 parag-1"></label>
                     <label  class="col-sm-2 parag-1">Core Router</label >
-                    <input id='value15' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
+                    <input id='value5' name="tx_lat" type = "text" class="col-sm-2 result-cell" readonly>
                 </div>
                 <br><br>
                 </form>
@@ -413,20 +413,14 @@
             boton = document.getElementById('btn');
             
             var sites = 0;
-            var value16_int;
-            var value17_int;
-            var ran_techs = ['2500 LTE Outdoor', '2500 LTE Indoor',	'3650 LTE Outdoor',	'3650 LTE Indoor',	'2500 TDMA Outdoor', '3650 TDMA Outdoor', '5800 TDMA Outdoor'];
-            var dl_max_th = [140,140,160,160,115,130,155];
-            var ul_max_th = [35,35,45,45,11,13,15];
-            var max_suscriber = [180,180,200,200,16,48,32];
-            var tx_sens = [-104,-104,-103,-103,-96,-95,-95];
-            var tx_power = [40,40,40,40,26,23,28];
-            var tx_gain_omni = [15,15,17,17,10,12,14];
-            var tx_gain_sector = [20,20,22.3,22.3,15,17,19];
-            var cpe_sensitivity = [-94,-94,-94,-94,-90,-88,-86];
-            var cpe_power = [23,23,23,23,25,24,25];
-            var cpe_gain = [14,5,19.5,6.5,19,19,23];
-
+            var mobile_core = ['distributed', 'centralized_small', 'centralized_large', 'na'];
+            var router = ['small_router', 'large_router', 'na'];
+            var router_thr = [8000,80000,0];
+            var max_suscribers = [128,2500,100000,0];
+            var max_sites = [1,8,100,0];
+            var hou_uni_total = 0;
+            var sites_total = 0;
+           
             var form1_var;
             var form2_var;
             var form3_var;
@@ -437,6 +431,7 @@
             var form8_var;
             var form9_var;
             var value1_int = 3;
+            var agg_total;
 
             formulario2.addEventListener('submit',function(evt){
                 evt.preventDefault();  
@@ -451,11 +446,27 @@
                 form7_var = formulario2.form7.value;
                 form8_var = formulario2.form8.value;
                 form9_var = formulario2.form9.value;
-                
 
                 fillFields();
-                //fillFields_2(); //PARA TX
+
+                var index_arr = mobile_core.indexOf(form8_var);
+                var subbase_vlook = max_suscribers[index_arr];
+                var sitbase_vlook = max_sites[index_arr];
+                var sub_base;
+                var site_base;
+                (subbase_vlook == 0) ? sub_base = '--' : sub_base = Math.ceil(hou_uni_total*form1_var/subbase_vlook); 
+                (sitbase_vlook == 0) ? site_base = '--' : site_base = Math.ceil(sites_total/sitbase_vlook);
+
+                var index_arr_2 = router.indexOf(form9_var);
+                var router_value = router_thr[index_arr_2];
+                var nu_insta;
+                (router_value == 0) ? nu_insta = '--' : nu_insta = Math.ceil(agg_total / router_value);
+
+
                 document.getElementById("value1").value = value1_int;  
+                document.getElementById("value2").value = sub_base;
+                document.getElementById("value3").value = site_base;
+                document.getElementById("value5").value = nu_insta;
             });
 
             var x = document.getElementById("myDIV_1");            
@@ -507,6 +518,10 @@
                 var names = [];
                 var sites_arr = [];
                 var houses = [];
+                var lamile_dl = 0;
+                var lamile_ul = 0;
+                var agg_capacity_dl = 0;
+                var agg_capacity_ul = 0;
 
                 for(var i=1; i<=sites; i++){
                     var name_1 = 'name_pol_' + i;
@@ -516,6 +531,8 @@
                     names[name_1 + '_var'] = document.getElementById('name_pol_' + i).value;
                     houses[hous_1 + '_var'] = document.getElementById('hou_uni_' + i).value;
                     sites_arr[site_1 + '_var'] = document.getElementById('site_' + i).value;
+                    hou_uni_total = hou_uni_total + Number(document.getElementById('hou_uni_' + i).value);
+                    sites_total = sites_total + Number(document.getElementById('site_' + i).value);
                 }
 
                 for(var i=1; i<=sites; i++){
@@ -545,44 +562,18 @@
                     document.getElementById("last_mile_ul_"+i).value = last_mile_cap_ul.toFixed(2);
                     document.getElementById("agg_dl_"+i).value = agg_cap_dl.toFixed(2);
                     document.getElementById("agg_ul_"+i).value = agg_cap_ul.toFixed(2);
-                }
-            }
 
-            function fillFields_2(){
-                var names = [];
-                var sites_arr = [];
-                var houses = [];
-
-                
-                last_mile_dl_
-                last_mile_ul_
-                agg_dl
-                agg_ul
-
-                for(var i=1; i<=sites; i++){
-                    var name_1 = 'name_pol_' + i;
-                    var hous_1 = 'hou_uni_' + i;
-                    var site_1 = 'site_' + i;
-
-                    names[name_1 + '_var'] = document.getElementById('name_pol_' + i).value;
-                    houses[hous_1 + '_var'] = document.getElementById('hou_uni_' + i).value;
-                    sites_arr[site_1 + '_var'] = document.getElementById('site_' + i).value;
+                    lamile_dl = lamile_dl + last_mile_cap_dl;
+                    lamile_ul = lamile_ul + last_mile_cap_ul;
+                    agg_capacity_dl = agg_capacity_dl + agg_cap_dl;
+                    agg_capacity_ul = agg_capacity_ul + agg_cap_ul;
                 }
 
-                for(var i=1; i<=sites; i++){
-
-
-                    var secavg_dl = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form3_var / (form5_var*form6_var*value1_int));
-                    var secavg_ul = (((houses[('hou_uni_'+i+'_var')]/sites_arr[('site_'+i+'_var')])*form1_var)*form4_var / (form5_var*form6_var*value1_int));
-                    console.log(names['name_pol_'+i+'_var']);
-                    document.getElementById("names_ori_"+i).value = names['name_pol_'+i+'_var'];
-                    document.getElementById("sec_avg_dl_"+i).value =  secavg_dl.toFixed(2);
-                    document.getElementById("sec_avg_ul_"+i).value =  secavg_ul.toFixed(2);
-                    document.getElementById("site_th_dl_"+i).value = (secavg_dl*value1_int).toFixed(2);
-                    document.getElementById("site_th_ul_"+i).value = (secavg_ul*value1_int).toFixed(2);
-                    document.getElementById("area_th_dl_"+i).value = ((secavg_dl*value1_int) * sites_arr[('site_'+i+'_var')]).toFixed(2);
-                    document.getElementById("area_th_ul_"+i).value = ((secavg_ul*value1_int) * sites_arr[('site_'+i+'_var')]).toFixed(2);
-                }
+                document.getElementById("last_mile_dl_total").value = lamile_dl.toFixed(2);
+                document.getElementById("last_mile_ul_total").value = lamile_ul.toFixed(2);
+                document.getElementById("agg_dl_total").value = agg_capacity_dl.toFixed(2);
+                document.getElementById("agg_ul_total").value = agg_capacity_ul.toFixed(2);
+                agg_total = agg_capacity_dl;
             }
 
             function myFunction_1() {
