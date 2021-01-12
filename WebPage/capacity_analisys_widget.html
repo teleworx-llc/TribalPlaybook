@@ -255,7 +255,7 @@
                         <label  class="col-sm-3 parag-1">Number of sectors per site</label >
                             <select id="form2" name="tx_lon" class="col-sm-2 text-box"> 
                                 <option value="LTE_1">LTE 1 sector</option>
-                                <option value="LTE_2">LTE 3 sector</option>
+                                <option value="LTE_3">LTE 3 sector</option>
                                 <option value="TDMA">TDMA 4 sectors</option>
                             </select>
                     </div>
@@ -430,7 +430,7 @@
             var form7_var;
             var form8_var;
             var form9_var;
-            var value1_int = 3;
+            var value1_int;
             var agg_total;
 
             formulario2.addEventListener('submit',function(evt){
@@ -447,6 +447,10 @@
                 form8_var = formulario2.form8.value;
                 form9_var = formulario2.form9.value;
 
+                if(form2_var == 'LTE_1'){value1_int = 1}
+                if(form2_var == 'LTE_3'){value1_int = 3}
+                if(form2_var == 'TDMA'){value1_int = 4}
+                
                 fillFields();
 
                 var index_arr = mobile_core.indexOf(form8_var);
@@ -462,11 +466,18 @@
                 var nu_insta;
                 (router_value == 0) ? nu_insta = '--' : nu_insta = Math.ceil(agg_total / router_value);
 
+                var core_insta;
+                (sub_base == '--' || site_base == '--') ? core_insta = '--' : core_insta = Math.max(sub_base, site_base);
 
                 document.getElementById("value1").value = value1_int;  
                 document.getElementById("value2").value = sub_base;
                 document.getElementById("value3").value = site_base;
+                document.getElementById("value4").value = core_insta;
                 document.getElementById("value5").value = nu_insta;
+
+                //Reiniciar contadores
+                hou_uni_total = 0;
+                sites_total = 0;
             });
 
             var x = document.getElementById("myDIV_1");            
