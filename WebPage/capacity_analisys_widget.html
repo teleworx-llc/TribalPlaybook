@@ -70,10 +70,10 @@
                             <ul class="collapse list-unstyled" id="engagementSubmenu">
                                 
                        
-                                <li><a href="">&#187 Widgets</a></li>
-                                <li><a href="">&#187 Templates</a></li>
-                                <li><a href="">&#187 Primers</a></li>
-                                <li><a href="">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
                                 
                                 
                             </ul>
@@ -247,7 +247,7 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Service Penetration (%)</label >
-                        <input id='form1' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form1' name="tx_lat" type = "text" class="col-sm-2 text-box">
                     </div>
                     <br>
                     <div class="row">
@@ -263,13 +263,13 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Downlink Rate (Mbps)</label >
-                        <input id='form3' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form3' name="tx_lat" type = "text" class="col-sm-2 text-box" >
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Uplink Rate (Mbps)</label >
-                        <input id='form4' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form4' name="tx_lat" type = "text" class="col-sm-2 text-box">
                     </div>
                     <br>
                     <br>
@@ -282,7 +282,7 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Number of Polygons (Max. 15)</label >
-                        <input id='member' name="tx_lat" type = "text" class="col-sm-2" name="member" >
+                        <input id='member' name="tx_lat" type = "text" class="col-sm-2 text-box" name="member" >
                         <label  class="col-sm-1 parag-1"></label>
                         <button type="submit" class="btn btn-default"><a href="#" id="filldetails" onclick="addFields()">Insert</a></button>
                     </div>
@@ -312,7 +312,7 @@
                         <div class="row">
                             <label  class="col-sm-3 parag-1"></label>
                             <label  class="col-sm-3 parag-1">Overprovisioning Factor</label >
-                            <input id='form6' name="tx_lat" type = "text" class="col-sm-2" >
+                            <input id='form6' name="tx_lat" type = "text" class="col-sm-2 text-box"value="85">
                         </div>
                         <br>
                         <div class="row">
@@ -618,21 +618,21 @@
 
                 var title_1 = document.createElement("label"); 
                 title_1.innerHTML = ("Name");
-                title_1.className = "col-sm-1";
+                title_1.setAttribute('class','col-sm-1 text-box');
 
                 var label_t2 = document.createElement("label"); 
                 label_t2.className = "col-sm-1 parag-1";
 
                 var title_2 = document.createElement("label"); 
                 title_2.innerHTML = ("Housing Units (#)");
-                title_2.className = "col-sm-2";
+                title_2.setAttribute('class','col-sm-2 text-box');
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
 
                 var title_3 = document.createElement("label"); 
                 title_3.innerHTML = ("Number of Sites (#)");
-                title_3.className = "col-sm-2";
+                title_3.setAttribute('class','col-sm-2 text-box');
 
                 container.appendChild(label_t1);
                 container.appendChild(title_1);
@@ -651,13 +651,13 @@
 
                     var newlabel = document.createElement("label"); 
                     newlabel.innerHTML = ("Polygon " + (i+1));
-                    newlabel.className = "col-sm-2";
+                    newlabel.className = "col-sm-2 text-box";
                     ///newlabel.setAttribute('class','col-sm-5');
 
                     var input_1 = document.createElement("input"); 
                     input_1.setAttribute('id','name_pol_' + (i+1));
                     input_1.setAttribute('type','text');
-                    input_1.setAttribute('class','col-sm-2');
+                    input_1.setAttribute('class','col-sm-2 text-box');
 
                     var label_2 = document.createElement("label"); 
                     label_2.className = "col-sm-1 parag-1";
@@ -668,12 +668,12 @@
                     var input_2 = document.createElement("input"); 
                     input_2.setAttribute('id','hou_uni_' + (i+1));
                     input_2.setAttribute('type','text');
-                    input_2.setAttribute('class','col-sm-2');
+                    input_2.setAttribute('class','col-sm-2 text-box');
 
                     var input_3 = document.createElement("input"); 
                     input_3.setAttribute('id','site_' + (i+1));
                     input_3.setAttribute('type','text');
-                    input_3.setAttribute('class','col-sm-2');
+                    input_3.setAttribute('class','col-sm-2 text-box');
 
                     newDiv.appendChild(label_1);
                     newDiv.appendChild(newlabel);
@@ -708,40 +708,40 @@
 
                 var title_1 = document.createElement("label"); 
                 title_1.innerHTML = ("Name");
-                title_1.className = "col-sm-1";
+                title_1.className = "col-sm-1 text-box";
 
                 var label_t2 = document.createElement("label"); 
                 label_t2.className = "col-sm-1 parag-1";
 
                 var title_2 = document.createElement("label"); 
                 title_2.innerHTML = ("Downlink");
-                title_2.className = "col-sm-1";
+                title_2.className = "col-sm-1 text-box";
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
 
                 var title_3 = document.createElement("label"); 
                 title_3.innerHTML = ("Uplink");
-                title_3.className = "col-sm-1";
+                title_3.className = "col-sm-1 text-box";
 
                 var label_t4 = document.createElement("label"); 
                 label_t4.className = "col-sm-1 parag-1";
 
                 var title_4 = document.createElement("label"); 
                 title_4.innerHTML = ("Downlink");
-                title_4.className = "col-sm-1";
+                title_4.className = "col-sm-1 text-box";
 
                 var title_5 = document.createElement("label"); 
                 title_5.innerHTML = ("Uplink");
-                title_5.className = "col-sm-1";
+                title_5.className = "col-sm-1 text-box";
 
                 var title_6 = document.createElement("label"); 
                 title_6.innerHTML = ("Downlink");
-                title_6.className = "col-sm-1";
+                title_6.className = "col-sm-1 text-box";
 
                 var title_7 = document.createElement("label"); 
                 title_7.innerHTML = ("Uplink");
-                title_7.className = "col-sm-1";
+                title_7.className = "col-sm-1 text-box";
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
@@ -778,7 +778,7 @@
 
                     var newlabel = document.createElement("input"); 
                     newlabel.setAttribute('id','names_ori_' + (i+1));
-                    newlabel.setAttribute('class','col-sm-3');
+                    newlabel.setAttribute('class','col-sm-3 text-box');
                     newlabel.setAttribute('readonly','');
                     //newlabel.setAttribute('class','result-cell');
                     //newlabel.innerHTML = ("Polygon " + (i+1));
@@ -788,7 +788,7 @@
                     var input_1 = document.createElement("input"); 
                     input_1.setAttribute('id','sec_avg_dl_' + (i+1));
                     input_1.setAttribute('type','text');
-                    input_1.setAttribute('class','col-sm-1');
+                    input_1.setAttribute('class','col-sm-1 text-box');
                     //input_1.setAttribute('class','result-cell');
                     input_1.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_1.setAttribute('readonly','');
@@ -796,7 +796,7 @@
                     var input_2 = document.createElement("input"); 
                     input_2.setAttribute('id','sec_avg_ul_' + (i+1));
                     input_2.setAttribute('type','text');
-                    input_2.setAttribute('class','col-sm-1');
+                    input_2.setAttribute('class','col-sm-1 text-box');
                     //input_2.setAttribute('class','result-cell');
                     input_2.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_2.setAttribute('readonly','');
@@ -804,7 +804,7 @@
                     var input_3 = document.createElement("input"); 
                     input_3.setAttribute('id','site_th_dl_' + (i+1));
                     input_3.setAttribute('type','text');
-                    input_3.setAttribute('class','col-sm-1');
+                    input_3.setAttribute('class','col-sm-1 text-box');
                     //input_3.setAttribute('class','result-cell');
                     input_3.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_3.setAttribute('readonly','');
@@ -812,7 +812,7 @@
                     var input_4 = document.createElement("input"); 
                     input_4.setAttribute('id','site_th_ul_' + (i+1));
                     input_4.setAttribute('type','text');
-                    input_4.setAttribute('class','col-sm-1');
+                    input_4.setAttribute('class','col-sm-1 text-box');
                     //input_4.setAttribute('class','result-cell');
                     input_4.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_4.setAttribute('readonly','');
@@ -820,7 +820,7 @@
                     var input_5 = document.createElement("input"); 
                     input_5.setAttribute('id','area_th_dl_' + (i+1));
                     input_5.setAttribute('type','text');
-                    input_5.setAttribute('class','col-sm-1');
+                    input_5.setAttribute('class','col-sm-1 text-box');
                     //input_5.setAttribute('class','result-cell');
                     input_5.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_5.setAttribute('readonly','');
@@ -828,7 +828,7 @@
                     var input_6 = document.createElement("input"); 
                     input_6.setAttribute('id','area_th_ul_' + (i+1));
                     input_6.setAttribute('type','text');
-                    input_6.setAttribute('class','col-sm-1');
+                    input_6.setAttribute('class','col-sm-1 text-box');
                     //input_6.setAttribute('class','result-cell');
                     input_6.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_6.setAttribute('readonly','');
@@ -862,40 +862,40 @@
 
                 var title_1 = document.createElement("label"); 
                 title_1.innerHTML = ("Name");
-                title_1.className = "col-sm-1";
+                title_1.className = "col-sm-1 text-box";
 
                 var label_t2 = document.createElement("label"); 
                 label_t2.className = "col-sm-1 parag-1";
 
                 var title_2 = document.createElement("label"); 
                 title_2.innerHTML = ("Downlink");
-                title_2.className = "col-sm-1";
+                title_2.className = "col-sm-1 text-box";
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
 
                 var title_3 = document.createElement("label"); 
                 title_3.innerHTML = ("Uplink");
-                title_3.className = "col-sm-1";
+                title_3.className = "col-sm-1 text-box";
 
                 var label_t4 = document.createElement("label"); 
                 label_t4.className = "col-sm-1 parag-1";
 
                 var title_4 = document.createElement("label"); 
                 title_4.innerHTML = ("Downlink");
-                title_4.className = "col-sm-1";
+                title_4.className = "col-sm-1 text-box";
 
                 var title_5 = document.createElement("label"); 
                 title_5.innerHTML = ("Uplink");
-                title_5.className = "col-sm-1";
+                title_5.className = "col-sm-1 text-box";
 
                 var title_6 = document.createElement("label"); 
                 title_6.innerHTML = ("Downlink");
-                title_6.className = "col-sm-1";
+                title_6.className = "col-sm-1 text-box";
 
                 var title_7 = document.createElement("label"); 
                 title_7.innerHTML = ("Uplink");
-                title_7.className = "col-sm-1";
+                title_7.className = "col-sm-1 text-box";
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
@@ -931,7 +931,7 @@
 
                     var newlabel = document.createElement("input"); 
                     newlabel.setAttribute('id','names_ori_tx_' + (i+1));
-                    newlabel.setAttribute('class','col-sm-3');
+                    newlabel.setAttribute('class','col-sm-3 text-box');
                     newlabel.setAttribute('readonly','');
                     //newlabel.setAttribute('class','result-cell');
                     //newlabel.innerHTML = ("Polygon " + (i+1));
@@ -941,7 +941,7 @@
                     var input_1 = document.createElement("input"); 
                     input_1.setAttribute('id','last_mile_dl_' + (i+1));
                     input_1.setAttribute('type','text');
-                    input_1.setAttribute('class','col-sm-1');
+                    input_1.setAttribute('class','col-sm-1 text-box');
                     //input_1.setAttribute('class','result-cell');
                     input_1.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_1.setAttribute('readonly','');
@@ -949,7 +949,7 @@
                     var input_2 = document.createElement("input"); 
                     input_2.setAttribute('id','last_mile_ul_' + (i+1));
                     input_2.setAttribute('type','text');
-                    input_2.setAttribute('class','col-sm-1');
+                    input_2.setAttribute('class','col-sm-1 text-box');
                     //input_2.setAttribute('class','result-cell');
                     input_2.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_2.setAttribute('readonly','');
@@ -957,7 +957,7 @@
                     var input_3 = document.createElement("input"); 
                     input_3.setAttribute('id','agg_dl_' + (i+1));
                     input_3.setAttribute('type','text');
-                    input_3.setAttribute('class','col-sm-1');
+                    input_3.setAttribute('class','col-sm-1 text-box');
                     //input_3.setAttribute('class','result-cell');
                     input_3.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_3.setAttribute('readonly','');
@@ -965,7 +965,7 @@
                     var input_4 = document.createElement("input"); 
                     input_4.setAttribute('id','agg_ul_' + (i+1));
                     input_4.setAttribute('type','text');
-                    input_4.setAttribute('class','col-sm-1');
+                    input_4.setAttribute('class','col-sm-1 text-box');
                     //input_4.setAttribute('class','result-cell');
                     input_4.setAttribute('style','border: 1px solid #5f476e;border-radius: 1px;color: #000;text-align: center;background-color: #E0E0E0;');
                     input_4.setAttribute('readonly','');

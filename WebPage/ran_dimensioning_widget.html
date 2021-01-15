@@ -70,10 +70,10 @@
                             <ul class="collapse list-unstyled" id="engagementSubmenu">
                                 
                        
-                                <li><a href="">&#187 Widgets</a></li>
-                                <li><a href="">&#187 Templates</a></li>
-                                <li><a href="">&#187 Primers</a></li>
-                                <li><a href="">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
                                 
                                 
                             </ul>
@@ -247,7 +247,7 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Service Penetration (%)</label >
-                        <input id='form1' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form1' name="tx_lat" type = "text" class="col-sm-2 text-box" >
                     </div>
                     <br>
                     <div class="row">
@@ -291,13 +291,13 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Downlink Rate (Mbps)</label >
-                        <input id='form6' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form6' name="tx_lat" type = "text" class="col-sm-2 text-box" >
                     </div>
                     <br>
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Uplink Rate (Mbps)</label >
-                        <input id='form7' name="tx_lat" type = "text" class="col-sm-2" >
+                        <input id='form7' name="tx_lat" type = "text" class="col-sm-2 text-box" >
                     </div>
                     <br>
                     <br>
@@ -310,7 +310,7 @@
                     <div class="row">
                         <label  class="col-sm-3 parag-1"></label>
                         <label  class="col-sm-3 parag-1">Number of Polygons (Max. 15)</label >
-                        <input id='member' name="tx_lat" type = "text" class="col-sm-2" name="member" >
+                        <input id='member' name="tx_lat" type = "text" class="col-sm-2 text-box" name="member" >
                         <label  class="col-sm-1 parag-1"></label>
                         <button type="submit" class="btn btn-default"><a href="#" id="filldetails" onclick="addFields()">Insert</a></button>
                     </div>
@@ -358,7 +358,7 @@
                         <div class="row">
                             <label  class="col-sm-3 parag-1"></label>
                             <label  class="col-sm-3 parag-1">Overprovisioning Factor</label >
-                            <input id='form9' name="tx_lat" type = "text" class="col-sm-2" >
+                            <input id='form9' name="tx_lat" type = "text" class="col-sm-2 text-box" value="85">
                         </div>
                         <br>
                         <div class="row">
@@ -389,7 +389,7 @@
                         <div class="row">
                             <label  class="col-sm-3 parag-1"></label>
                             <label  class="col-sm-3 parag-1">Antenna Height [m]</label >
-                            <input id='form10' name="tx_lat" type = "text" class="col-sm-2" >
+                            <input id='form10' name="tx_lat" type = "text" class="col-sm-2 text-box" value="10">
                         </div>
                         <br>
                         <div class="row">
@@ -413,19 +413,19 @@
                         <div class="row">
                             <label  class="col-sm-3 parag-1"></label>
                             <label  class="col-sm-3 parag-1">Feeder Loss [dB]</label >
-                            <input id='form11' name="tx_lat" type = "text" class="col-sm-2" >
+                            <input id='form11' name="tx_lat" type = "text" class="col-sm-2 text-box" value="2">
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-3 parag-1"></label>
                             <label  class="col-sm-3 parag-1">Interference Margin [dB]</label >
-                            <input id='form12' name="tx_lat" type = "text" class="col-sm-2" >
+                            <input id='form12' name="tx_lat" type = "text" class="col-sm-2 text-box" value="3">
                         </div>
                         <br>
                         <div class="row">
                             <label  class="col-sm-3 parag-1"></label>
                             <label  class="col-sm-3 parag-1">Shadow Fading Std. Dev. [dB]</label >
-                            <input id='form13' name="tx_lat" type = "text" class="col-sm-2" >
+                            <input id='form13' name="tx_lat" type = "text" class="col-sm-2 text-box" value="6">
                         </div>
                         <br>
                         <div class="row">
@@ -736,21 +736,21 @@
 
                 var title_1 = document.createElement("label"); 
                 title_1.innerHTML = ("Name");
-                title_1.className = "col-sm-1";
+                title_1.setAttribute('class','col-sm-1 text-box');
 
                 var label_t2 = document.createElement("label"); 
                 label_t2.className = "col-sm-1 parag-1";
 
                 var title_2 = document.createElement("label"); 
                 title_2.innerHTML = ("Area (km^2)");
-                title_2.className = "col-sm-2";
+                title_2.setAttribute('class','col-sm-2 text-box');
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
 
                 var title_3 = document.createElement("label"); 
                 title_3.innerHTML = ("Housing Units (#)");
-                title_3.className = "col-sm-2";
+                title_3.setAttribute('class','col-sm-2 text-box');
 
                 container.appendChild(label_t1);
                 container.appendChild(title_1);
@@ -769,13 +769,13 @@
 
                     var newlabel = document.createElement("label"); 
                     newlabel.innerHTML = ("Polygon " + (i+1));
-                    newlabel.className = "col-sm-2";
+                    newlabel.setAttribute('class','col-sm-2 text-box');
                     ///newlabel.setAttribute('class','col-sm-5');
 
                     var input_1 = document.createElement("input"); 
                     input_1.setAttribute('id','name_pol_' + (i+1));
                     input_1.setAttribute('type','text');
-                    input_1.setAttribute('class','col-sm-2');
+                    input_1.setAttribute('class','col-sm-2 text-box');
 
                     var label_2 = document.createElement("label"); 
                     label_2.className = "col-sm-1 parag-1";
@@ -786,12 +786,12 @@
                     var input_2 = document.createElement("input"); 
                     input_2.setAttribute('id','area_pol_' + (i+1));
                     input_2.setAttribute('type','text');
-                    input_2.setAttribute('class','col-sm-2');
+                    input_2.setAttribute('class','col-sm-2 text-box');
 
                     var input_3 = document.createElement("input"); 
                     input_3.setAttribute('id','hou_uni_' + (i+1));
                     input_3.setAttribute('type','text');
-                    input_3.setAttribute('class','col-sm-2');
+                    input_3.setAttribute('class','col-sm-2 text-box');
 
                     newDiv.appendChild(label_1);
                     newDiv.appendChild(newlabel);
@@ -825,28 +825,28 @@
 
                 var title_1 = document.createElement("label"); 
                 title_1.innerHTML = ("Name");
-                title_1.className = "col-sm-1";
+                title_1.setAttribute('class','col-sm-1 text-box');
 
                 var label_t2 = document.createElement("label"); 
                 label_t2.className = "col-sm-1 parag-1";
 
                 var title_2 = document.createElement("label"); 
                 title_2.innerHTML = ("N_sites_Coverage");
-                title_2.className = "col-sm-2";
+                title_2.setAttribute('class','col-sm-2 text-box');
 
                 var label_t3 = document.createElement("label"); 
                 label_t3.className = "col-sm-1 parag-1";
 
                 var title_3 = document.createElement("label"); 
                 title_3.innerHTML = ("N_sites_Capacity");
-                title_3.className = "col-sm-2";
+                title_3.setAttribute('class','col-sm-2 text-box');
 
                 var label_t4 = document.createElement("label"); 
                 label_t4.className = "col-sm-1 parag-1";
 
                 var title_4 = document.createElement("label"); 
                 title_4.innerHTML = ("N_sites");
-                title_4.className = "col-sm-2";
+                title_4.setAttribute('class','col-sm-2 text-box');
 
                 container.appendChild(label_t1);
                 container.appendChild(title_1);

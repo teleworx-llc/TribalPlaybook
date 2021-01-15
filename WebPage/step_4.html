@@ -89,10 +89,10 @@
                             <ul class="collapse list-unstyled" id="engagementSubmenu">
                                 
                        
-                                <li><a href="">&#187 Widgets</a></li>
-                                <li><a href="">&#187 Templates</a></li>
-                                <li><a href="">&#187 Primers</a></li>
-                                <li><a href="">&#187 Wizards</a></li>
+                                <li><a href="MoE_Widgets.html">&#187 Widgets</a></li>
+                                <li><a href="MoE_Templates.html">&#187 Templates</a></li>
+                                
+                                <li><a href="MoE_Wizards.html">&#187 Wizards</a></li>
                                 
                                 
                             </ul>
@@ -166,7 +166,7 @@
                             transport or backhaul network and the core site. Each of these segments is
                             briefly described below.</p>
                             
-                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=1 type='A'>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type='A'>
                                 <li><b><u>RAN</u></b><br>
                                 The RAN refers to the set of radio base stations (BS) deployed at
                                 access sites (RAN sites) over the area to be served to provide wireless access
@@ -176,14 +176,14 @@
                                 network through devices such as smartphones, tablets, computers, or any device
                                 which has Wi-Fi functionality.<br><br>Figure 4.2
                                 displays a high-level view of the RAN for an FWA network.</li>
-                            </ol>
+                            </ul>
                             
                             <p class="normal-text"><img border=0 width=534 height=378 id=image106.png
                             src="images/image022.png"></p>
                             
                             <p align=center><i>Figure 4.2 &mdash; High-level view of the RAN.</i></p>
                             
-                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=2 type='A'>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=2 type='A'>
                                 <li><b><u>Transport/Backhaul</u></b><br>
                             The transport
                             network provides a backhaul connection between every BS on the RAN to the core
@@ -206,7 +206,7 @@
                                 points.</li>
                             </ul>
                             </li>
-                            </ol>
+                            </ul>
                             
                             <p align=center>Figure 4.3
                             displays a high-level view of the backhaul architecture showing the three
@@ -218,7 +218,7 @@
                             <p align=center><i>Figure 4.3 &mdash; High-level view of the
                             backhaul architecture.</i></p>
                             
-                            <ol class="normal-text ul-iconos" style='margin-top:0in' start=3 type='A'>
+                            <ul class="normal-text ul-iconos" style='margin-top:0in' start=3 type='A'>
                                 <li><b><u>Core / Aggregation</u></b><br>
                                 The core site is
                                 the point of aggregation for the traffic in the network and it is equipped with
@@ -242,7 +242,7 @@
                             (R&amp;S) equipment. Additional elements can compose a core site when
                             considering LTE as the RAN technology. Details about these elements will be
                             provided in section 4.1.2.1.</li>
-                            </ol>
+                            </ul>
                             
                             <p class="normal-text">Figure 4.4
                             displays an overview of the core network.</p>
@@ -1163,56 +1163,47 @@
                         point is more important than the others</p>
                         
                         <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                            <li>Select the option with the smaller CAPEX + OPEX.</li>
+                            <li>Select the option with the smaller CAPEX + OPEX.<br>In scenarios
+                                where two or more architecture are feasible, it is recommended to select the
+                                option which CAPEX + OPEX is the lowest of all. This option is recommended in
+                                cases where your financial constraints are tight. However, the CAPEX+OPEX
+                                should be informed by interaction with the vendor community and a preliminary
+                                network design.</li>
                         </ul>
-                        
-                        <p class="normal-text">In scenarios
-                        where two or more architecture are feasible, it is recommended to select the
-                        option which CAPEX + OPEX is the lowest of all. This option is recommended in
-                        cases where your financial constraints are tight. However, the CAPEX+OPEX
-                        should be informed by interaction with the vendor community and a preliminary
-                        network design.</p>
                         
                         <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
                             <li>Select the option with the least number of
-                        estimated sites.</li>
-                        </ul>
-                        
-                        <p class="normal-text">Select this
+                        estimated sites.<br>Select this
                         option when you want to minimize the efforts during network deployment. This
                         option is recommended when your working force is composed by a small number of
-                        persons and/or timelines are tight.</p>
-                        
-                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                            <li>Preferred technology.</li>
+                        persons and/or timelines are tight.</li>
                         </ul>
                         
-                        <p class="normal-text">In some cases,
-                        you may prefer a technology (LTE or TDMA) over the other. For instance,
-                        choosing LTE over TDMA may allow your network to have a smooth evolution
-                        towards future standardized technologies (like 5G).</p>
-                        
                         <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                            <li>Vendor interoperability.</li>
+                            <li>Preferred technology.<br>In some cases,
+                                you may prefer a technology (LTE or TDMA) over the other. For instance,
+                                choosing LTE over TDMA may allow your network to have a smooth evolution
+                                towards future standardized technologies (like 5G).</li>
+                        </ul>
+                                                
+                        <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
+                            <li>Vendor interoperability.<br>You must verify
+                            that vendors willing to take place in the construction of the network can
+                            interoperate between them to comply with the defined architecture. For
+                            instance, in an LTE network, vendor must ensure interoperability for their BS
+                            equipment if a traditional BBU+RRU deployment is selected.</li>
                         </ul>
                         
-                        <p class="normal-text">You must verify
-                        that vendors willing to take place in the construction of the network can
-                        interoperate between them to comply with the defined architecture. For
-                        instance, in an LTE network, vendor must ensure interoperability for their BS
-                        equipment if a traditional BBU+RRU deployment is selected.</p>
                         
                         <ul class="normal-text ul-iconos" style='margin-top:0in' start=1 type=1>
-                            <li>Operational implications.</li>
+                            <li>Operational implications.<br>In some cases,
+                            you me want to reduce efforts during the deployment of the network due to
+                            several reasons: lack of skill of the network staff or low budget for that
+                            regard. For instance, if a network architecture contemplates outdoor CPEs but
+                            your staff skills don't cover that, it will be recommended to select an indoor
+                            CPE case.</li>
                         </ul>
-                        
-                        <p class="normal-text">In some cases,
-                        you me want to reduce efforts during the deployment of the network due to
-                        several reasons: lack of skill of the network staff or low budget for that
-                        regard. For instance, if a network architecture contemplates outdoor CPEs but
-                        your staff skills don't cover that, it will be recommended to select an indoor
-                        CPE case.</p>
-                        
+                                                
                         <p class="normal-text">In addition, you must be aware that the
                         number of sites and CAPEX+OPEX computed by the wizard are an estimation from a
                         coverage analysis. The final number of sites will be defined as a result of <a class="a_link" href="step_5.html">step 5</a>.</p>
